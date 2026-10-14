@@ -316,6 +316,9 @@ section { padding-block: 2.5rem; border-top: 1px solid var(--line); }
 .sizes { font-variant-numeric: tabular-nums; }
 .nw { white-space: nowrap; }
 .buy { display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; }
+.src { font-size: 0.88rem; overflow-wrap: anywhere; }
+.chip.gov { color: var(--ok); border-color: var(--ok); background: var(--ok-soft); }
+td.wrap-cell { white-space: normal; overflow-wrap: anywhere; min-width: 14rem; }
 .row-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .linkbtn { font: 500 0.85rem/1 var(--f-body); background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
 .empty { padding: 2rem; text-align: center; color: var(--muted); background: var(--surface); border: 1px dashed var(--line); border-radius: 12px; }
@@ -366,6 +369,7 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
     <a href="#situations">Walls and windows</a>
     <a href="#sizes">Sizes</a>
     <a href="#buying">Buying</a>
+    <a href="#official">Official links</a>
     <a href="#sources">Sources</a>
   </div>
 </nav>
@@ -544,6 +548,22 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
     </div>
   </section>
 
+  <section id="official">
+    <div class="wrap stack">
+      <div class="section-head">
+        <span class="label">Every flag, from the source</span>
+        <h2>Official flag links by country</h2>
+        <p class="prose muted" id="srcCount"></p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Country</th><th>Source</th><th>Page</th></tr></thead>
+          <tbody id="srcBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <section id="sources">
     <div class="wrap">
       <div class="section-head">
@@ -654,8 +674,19 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
         (c.note ? '<p class="note">' + esc(c.note) + "</p>" : "") +
         '<div class="facts"><div><span class="label">Sizes at official ratio ' + esc(c.r) + '</span><span class="sizes">' + sizes(c) + "</span></div>" +
         '<div><span class="label">Where to buy</span><span class="buy">' + buy(c) + "</span></div></div>" +
+        '<p class="src"><span class="label">' + (c.gov ? "Official source" : "Reference") + '</span> <a href="' + esc(c.src) + '" target="_blank" rel="noopener">' + esc(c.srcLabel) + "</a>" + (c.gov ? "" : ' <span class="muted">(no government page found)</span>') + "</p>" +
         (c.t === "np" ? "" : '<div class="row-actions"><button type="button" class="linkbtn" data-demo="' + c.c + '">Show the turn in the demo</button></div>') +
       "</div></article>";
+  }
+
+  var srcBody = document.getElementById("srcBody");
+  if (srcBody) {
+    srcBody.innerHTML = C.map(function (c) {
+      return '<tr><td><a href="#' + c.c + '">' + esc(c.n) + "</a></td><td>" + (c.gov ? '<span class="chip gov">Government</span>' : '<span class="chip">Wikipedia</span>') +
+        '</td><td class="wrap-cell"><a href="' + esc(c.src) + '" target="_blank" rel="noopener">' + esc(c.srcLabel) + "</a></td></tr>";
+    }).join("");
+    var gov = C.filter(function (c) { return c.gov; }).length;
+    document.getElementById("srcCount").textContent = gov + " of " + C.length + " countries link to a page published by their own government, a ministry, parliament or an embassy. The rest link to Wikipedia's article on the flag.";
   }
 
   var list = document.getElementById("list");
