@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hanging Flags Vertically</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="How to hang every country's flag horizontally and vertically, with pictures, official proportions, sizes and where to buy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a reading column for the rules, a full-width directory of country rows. Flag-manual feel: condensed signage display, plain sans body, mono for hoist/fly labels. */
+:root {
+  --paper: #f2f4f7;
+  --surface: #ffffff;
+  --stage: #e3e8ef;
+  --ink: #152033;
+  --muted: #586478;
+  --line: #d3dae4;
+  --accent: #1f47c4;
+  --accent-soft: #e2e9fb;
+  --ok: #17804b;
+  --ok-soft: #e1f3e9;
+  --bad: #be3427;
+  --bad-soft: #fbe6e3;
+  --warn: #8a5a00;
+  --warn-soft: #fbf0d9;
+  --pole: #3b4658;
+
+  --f-display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e131b;
+    --surface: #151c27;
+    --stage: #1a2331;
+    --ink: #e5eaf2;
+    --muted: #98a3b4;
+    --line: #273244;
+    --accent: #85a6ff;
+    --accent-soft: #1d2a48;
+    --ok: #4cc58c;
+    --ok-soft: #12301f;
+    --bad: #ff7d6e;
+    --bad-soft: #3a1a17;
+    --warn: #f0b94a;
+    --warn-soft: #33270f;
+    --pole: #8d98aa;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e131b;
+  --surface: #151c27;
+  --stage: #1a2331;
+  --ink: #e5eaf2;
+  --muted: #98a3b4;
+  --line: #273244;
+  --accent: #85a6ff;
+  --accent-soft: #1d2a48;
+  --ok: #4cc58c;
+  --ok-soft: #12301f;
+  --bad: #ff7d6e;
+  --bad-soft: #3a1a17;
+  --warn: #f0b94a;
+  --warn-soft: #33270f;
+  --pole: #8d98aa;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wrap {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.prose { max-width: 42rem; }
+.muted { color: var(--muted); }
+
+h1, h2, h3 { font-family: var(--f-display); line-height: 1.05; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.6rem, 7vw, 4.6rem); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 600; }
+h3 { font-size: 1.35rem; font-weight: 600; }
+p { margin: 0; }
+
+.label {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ---------- Top nav ---------- */
+.topnav { border-bottom: 1px solid var(--line); background: var(--surface); }
+.topnav .wrap { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; padding-block: 0.6rem; font-size: 0.9rem; }
+.topnav a { text-decoration: none; color: var(--muted); }
+.topnav a:hover { color: var(--accent); }
+
+/* ---------- Hero ---------- */
+header.hero { padding-block: 2.5rem 2rem; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2.5rem; align-items: center; }
+.hero-copy { display: grid; gap: 1.25rem; min-width: 0; }
+.rule { font-size: 1.25rem; line-height: 1.5; max-width: 34rem; }
+.rule strong { color: var(--accent); font-weight: 600; }
+.lede { color: var(--muted); max-width: 34rem; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+
+.stage-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.9rem;
+  min-width: 0;
+}
+.stage-top { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; }
+.stage-top label { font-size: 0.85rem; color: var(--muted); }
+select, input[type="search"] {
+  font: 500 0.95rem/1.2 var(--f-body);
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  min-width: 0;
+}
+.stage-top select { flex: 1 1 10rem; }
+.stage {
+  position: relative;
+  background: var(--stage);
+  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  max-width: 100%;
+  max-height: 26rem;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  perspective: 1400px;
+  overflow: hidden;
+}
+.stage-flag {
+  width: 72%;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) rotateZ(0deg);
+  transition: transform 1s cubic-bezier(.45,.05,.25,1);
+  position: relative;
+}
+.stage-flag img { display: block; width: 100%; height: auto; box-shadow: 0 6px 14px rgba(0,0,0,.18); }
+.stage-flag::before {
+  content: "";
+  position: absolute;
+  left: -7px; top: -4%; bottom: -4%;
+  width: 5px;
+  border-radius: 3px;
+  background: var(--pole);
+}
+.stage-flag[data-step="1"] { transform: rotateY(0deg) rotateZ(90deg); }
+.stage-flag[data-step="2"] { transform: rotateY(180deg) rotateZ(90deg); }
+.stage-badge {
+  position: absolute;
+  left: 10px; top: 10px;
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.stage-badge.ok { color: var(--ok); border-color: var(--ok); background: var(--ok-soft); }
+.stage-badge.bad { color: var(--bad); border-color: var(--bad); background: var(--bad-soft); }
+.viewer-mark { position: absolute; right: 10px; bottom: 8px; font-family: var(--f-mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.04em; }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
+.step {
+  font: inherit;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 8px;
+  padding: 0.55rem 0.65rem;
+  cursor: pointer;
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+.step .n { font-family: var(--f-mono); font-size: 0.68rem; color: var(--muted); letter-spacing: .06em; }
+.step[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.stage-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; justify-content: space-between; }
+.btn {
+  font: 600 0.9rem/1 var(--f-body);
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--surface);
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn.ghost { background: transparent; color: var(--accent); }
+.stage-note { font-size: 0.85rem; color: var(--muted); min-width: 0; flex: 1 1 14rem; }
+
+/* ---------- Sections ---------- */
+section { padding-block: 2.5rem; border-top: 1px solid var(--line); }
+.section-head { display: grid; gap: 0.6rem; margin-bottom: 1.5rem; }
+
+/* ---------- Directory ---------- */
+.toolbar {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 5;
+  background: var(--paper);
+  padding-block: 0.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+.toolbar input[type="search"] { flex: 1 1 14rem; }
+.seg { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.seg button {
+  font: 500 0.85rem/1 var(--f-body);
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.seg button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.count { font-family: var(--f-mono); font-size: 0.75rem; color: var(--muted); margin-left: auto; }
+
+.list { display: grid; gap: 0.9rem; }
+.country {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  gap: 1rem 1.5rem;
+  scroll-margin-top: 5rem;
+}
+.country:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.pics { display: flex; gap: 1rem; align-items: flex-start; }
+.pic { display: grid; gap: 0.35rem; justify-items: start; }
+.hflag { position: relative; width: 9rem; padding-left: 6px; }
+.hflag::before { content: ""; position: absolute; left: 0; top: -4px; bottom: -4px; width: 3px; border-radius: 2px; background: var(--pole); }
+.hflag img { display: block; width: 100%; height: auto; box-shadow: 0 0 0 1px var(--line); }
+.vflag { --L: 7rem; position: relative; height: var(--L); width: calc(var(--L) / var(--a)); margin-top: 6px; }
+.vflag::before { content: ""; position: absolute; top: -6px; left: -4px; right: -4px; height: 3px; border-radius: 2px; background: var(--pole); }
+.vflag img {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: var(--L);
+  height: calc(var(--L) / var(--a));
+  max-width: none;
+  transform: translate(-50%, -50%) rotate(90deg) scaleY(-1);
+  box-shadow: 0 0 0 1px var(--line);
+}
+.vflag.rot img { transform: translate(-50%, -50%) rotate(90deg); }
+.vnone { width: 4.5rem; height: 7rem; border: 1px dashed var(--line); border-radius: 6px; display: grid; place-items: center; text-align: center; font-size: 0.72rem; color: var(--muted); padding: 0.3rem; }
+.pic .label { font-size: 0.64rem; }
+
+.info { display: grid; gap: 0.7rem; min-width: 0; }
+.info-head { display: flex; flex-wrap: wrap; gap: 0.4rem 0.75rem; align-items: baseline; }
+.info-head h3 { font-size: 1.55rem; }
+.chip {
+  font-family: var(--f-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.chip.e { color: var(--warn); border-color: var(--warn); background: var(--warn-soft); }
+.chip.x { color: var(--bad); border-color: var(--bad); background: var(--bad-soft); }
+.dir { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.75rem 1.25rem; }
+.dir div { display: grid; gap: 0.2rem; align-content: start; min-width: 0; }
+.dir p, .note { font-size: 0.93rem; }
+.note { color: var(--muted); border-left: 3px solid var(--line); padding-left: 0.75rem; }
+.facts { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.75rem 1.25rem; font-size: 0.88rem; }
+.facts > div { display: grid; gap: 0.2rem; min-width: 0; }
+.sizes { font-variant-numeric: tabular-nums; }
+.nw { white-space: nowrap; }
+.buy { display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; }
+.row-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.linkbtn { font: 500 0.85rem/1 var(--f-body); background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+.empty { padding: 2rem; text-align: center; color: var(--muted); background: var(--surface); border: 1px dashed var(--line); border-radius: 12px; }
+
+/* ---------- Cards and lists ---------- */
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 1.1rem 1.25rem; display: grid; gap: 0.5rem; align-content: start; min-width: 0; }
+.card p { font-size: 0.95rem; }
+.situations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2rem; }
+.situation { display: grid; gap: 0.35rem; min-width: 0; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 0.6rem 0.9rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+tr:last-child td { border-bottom: 0; }
+.checklist { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem; max-width: 44rem; }
+.checklist li { display: grid; grid-template-columns: 1.6rem 1fr; gap: 0.6rem; align-items: start; }
+.checklist li::before { content: ""; width: 1.1rem; height: 1.1rem; margin-top: 0.22rem; border: 2px solid var(--accent); border-radius: 4px; }
+.sources { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; font-size: 0.92rem; color: var(--muted); max-width: 52rem; }
+footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.85rem; }
+.stack { display: grid; gap: 1rem; }
+
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .country { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+  header.hero { padding-block: 1.75rem 1.5rem; }
+  .cards, .situations, .dir, .facts { grid-template-columns: minmax(0, 1fr); }
+  .hflag { width: 8rem; }
+  .vflag { --L: 6rem; }
+  .steps { gap: 0.35rem; }
+  .step { font-size: 0.78rem; padding: 0.5rem; }
+  .count { margin-left: 0; }
+  .seg { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; scrollbar-width: none; }
+  .seg button { flex: 0 0 auto; }
+  .country { scroll-margin-top: 9rem; }
+}
+@media (prefers-reduced-motion: reduce) { .stage-flag { transition: none; } }
+</style>
+</head>
+<body>
+
+<nav class="topnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#flags">Every country</a>
+    <a href="#exceptions">Exceptions</a>
+    <a href="#situations">Walls and windows</a>
+    <a href="#sizes">Sizes</a>
+    <a href="#buying">Buying</a>
+    <a href="#sources">Sources</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="label">Flag etiquette · 197 countries</span>
+      <h1>Hanging Flags Vertically</h1>
+      <p class="rule">Keep the <strong>canton</strong>, the upper corner next to the pole, <strong>at the top left as you look at it</strong>. The hoist edge goes to the top, and what was the top stripe ends up on your left.</p>
+      <p class="lede">For most flags that means a quarter turn and then turning the flag over, so you see its back. The United States, Canada and most flag references follow this convention. The Union Flag and flags with writing or emblems are exceptions.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#flags">Find your country's flag</a>
+        <a class="btn ghost" href="#exceptions">See the exceptions</a>
+      </div>
+    </div>
+
+    <div class="stage-card" aria-label="Animated demonstration">
+      <div class="stage-top">
+        <label for="demoSelect">Flag</label>
+        <select id="demoSelect"></select>
+      </div>
+      <div class="stage">
+        <span class="stage-badge" id="stageBadge">Horizontal</span>
+        <div class="stage-flag" id="stageFlag" data-step="0"><img id="stageImg" alt="" width="300" height="158"></div>
+        <span class="viewer-mark">as seen by the viewer</span>
+      </div>
+      <div class="steps" role="group" aria-label="Steps">
+        <button class="step" type="button" data-go="0" aria-pressed="true"><span class="n">STEP 1</span><span>Hoist on the left</span></button>
+        <button class="step" type="button" data-go="1" aria-pressed="false"><span class="n">STEP 2</span><span>Quarter turn, hoist up</span></button>
+        <button class="step" type="button" data-go="2" aria-pressed="false"><span class="n">STEP 3</span><span id="step3Text">Turn it over</span></button>
+      </div>
+      <div class="stage-actions">
+        <p class="stage-note" id="stageNote">The flag as normally flown, hoist edge against the pole.</p>
+        <button class="btn" type="button" id="playBtn">Play the turn</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="flags">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">Every country</span>
+        <h2>Flags of the world, and how to hang each one</h2>
+        <p class="prose muted">Each entry shows the flag as flown horizontally, with the pole on the left, and hung vertically against a wall as the viewer sees it. The grey bar marks the hoist, the edge with the sleeve or grommets. Proportions are hoist : fly, the official height-to-length ratio.</p>
+      </div>
+      <div class="toolbar">
+        <label for="q" class="label" style="position:absolute;left:-9999px">Search countries</label>
+        <input type="search" id="q" placeholder="Search a country" autocomplete="off">
+        <div class="seg" role="group" aria-label="Filter">
+          <button type="button" data-f="all" aria-pressed="true">All</button>
+          <button type="button" data-f="p" aria-pressed="false">Simple designs</button>
+          <button type="button" data-f="e" aria-pressed="false">Emblem or writing</button>
+          <button type="button" data-f="x" aria-pressed="false">Special cases</button>
+        </div>
+        <span class="count" id="count"></span>
+      </div>
+      <div class="list" id="list"></div>
+      <p class="empty" id="empty" hidden>No country matches that search. Try part of the name, such as “guinea”.</p>
+    </div>
+  </section>
+
+  <section id="exceptions">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">Exceptions</span>
+        <h2>Flags that don't follow the turn-over rule</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="label">United Kingdom</span>
+          <h3>The Union Flag only rotates</h3>
+          <p>The Union Flag is not symmetrical. In the corner next to the pole, the broad white diagonal must sit above the red one, and the Flag Institute says this still applies when it hangs vertically: the broad white diagonal goes uppermost in the top-left corner. Turning the flag over would put it upside down, so give it the quarter turn and stop there.</p>
+        </article>
+        <article class="card">
+          <span class="label">Writing on the flag</span>
+          <h3>Text has to stay readable</h3>
+          <p>Saudi Arabia's flag carries the shahada and is made double-sided so the text reads correctly, right to left, from either side. Turning it sideways leaves the text running vertically. Purpose-made vertical versions with the inscription and sword rotated are reported, and some sources say the flag should not be hung vertically at all. Iraq, Iran, Brazil and others also carry writing. For any of these, use a purpose-made vertical flag or check the country's own protocol.</p>
+        </article>
+        <article class="card">
+          <span class="label">Emblems and crowns</span>
+          <h3>Some emblems stay upright</h3>
+          <p>Flags of the World describes Liechtenstein's vertical flag as the horizontal design turned a quarter turn anticlockwise, with the crown kept upright in the top-left corner. Vertical banners are common in Central Europe, and versions that carry a coat of arms are generally made with the arms upright. If a flag has an emblem or seal, buy the vertical version instead of turning a horizontal one.</p>
+        </article>
+        <article class="card">
+          <span class="label">Convention, not world law</span>
+          <h3>The rule assumes a canton</h3>
+          <p>Top left for the canton is a widely followed convention, written into US and Canadian guidance. It is not an international law, and it says little about flags with no honour point in the corner. For official or ceremonial displays, the country's own flag rules decide.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="situations">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">Where it hangs</span>
+        <h2>Walls, windows and streets</h2>
+      </div>
+      <div class="situations">
+        <div class="situation">
+          <h3>Flat against a wall</h3>
+          <p>Judge it from where people stand. The canton goes at their top left. Under the US Flag Code the union goes uppermost and to the flag's own right, which is the observer's left, whether the flag hangs horizontally or vertically.</p>
+        </div>
+        <div class="situation">
+          <h3>In a window</h3>
+          <p>The audience is outside. Hang it so the canton is at the top left for someone in the street, which means it looks reversed from inside the room. The US Flag Code treats a window the same way as a wall, from the street side.</p>
+        </div>
+        <div class="situation">
+          <h3>Over the middle of a street</h3>
+          <p>People see it from both sides, so the US Flag Code fixes it by compass: hang it vertically with the union to the north on an east–west street, and to the east on a north–south street.</p>
+        </div>
+        <div class="situation">
+          <h3>On a pole</h3>
+          <p>Flown horizontally from a pole, the hoist is always against the pole and the flag reads normally from the front. Check which stripe or colour belongs on top: several flags look like another country's when upside down.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sizes">
+    <div class="wrap stack">
+      <div class="section-head">
+        <span class="label">Dimensions</span>
+        <h2>Official proportions and shop sizes</h2>
+        <p class="prose muted">Each country sets its own ratio of height (hoist) to length (fly). Most shops sell every national flag at one size, usually 3 × 5 ft (90 × 150 cm), whatever the official ratio, so a 1:2 flag like Canada's or a 2:3 flag like France's is slightly stretched or squashed. If the proportions matter, look for a flag sold at the country's official ratio. Each entry in the list gives sizes at the official ratio.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Common shop size</th><th>Metric</th><th>Typical use</th></tr></thead>
+          <tbody>
+            <tr><td>12 × 18 in</td><td>30 × 45 cm</td><td>Desk or hand flag</td></tr>
+            <tr><td>2 × 3 ft</td><td>60 × 90 cm</td><td>Small wall, house pole</td></tr>
+            <tr><td>3 × 5 ft</td><td>90 × 150 cm</td><td>Standard size for most retail national flags</td></tr>
+            <tr><td>4 × 6 ft</td><td>120 × 180 cm</td><td>Large wall or 20–25 ft pole</td></tr>
+            <tr><td>5 × 8 ft</td><td>150 × 240 cm</td><td>Commercial pole, 30–35 ft</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted" style="font-size:0.88rem">Pole heights are a common shop rule of thumb, not a regulation: flag length about a quarter to a third of the pole height.</p>
+    </div>
+  </section>
+
+  <section id="buying">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">Where to buy</span>
+        <h2>Buying a flag</h2>
+        <p class="prose muted">Each country entry links to a search for that flag on Amazon (US and UK), eBay, Etsy and Walmart. These are searches, not endorsements. Before you buy, check the listing for:</p>
+      </div>
+      <ul class="checklist">
+        <li><span>Material: printed polyester for indoor or occasional use, nylon or sewn polyester for flying outdoors.</span></li>
+        <li><span>The size and ratio you want, and whether it matches the official proportions.</span></li>
+        <li><span>A vertical-format version if the flag has an emblem or writing and you will hang it vertically.</span></li>
+        <li><span>Fittings: a canvas heading with brass grommets for a pole, or a sleeve for a crossbar or indoor pole.</span></li>
+      </ul>
+      <p class="prose" style="margin-top:1.25rem">Specialist dealers stock every nation. In the US, <a href="https://www.crwflags.com/" target="_blank" rel="noopener">CRW Flags</a> carries flags of all nations in several sizes and is an authorized Annin retailer. Annin's international flags are also sold through general retailers.</p>
+    </div>
+  </section>
+
+  <section id="check">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">Before you step back</span>
+        <h2>Quick check</h2>
+      </div>
+      <ul class="checklist">
+        <li><span>The hoist edge, the one with the sleeve, grommets or heading tape, is at the top.</span></li>
+        <li><span>The canton, or the stripe that used to be on top, is on the viewer's left.</span></li>
+        <li><span>For the Union Flag: the broad white diagonal is above the red one in the top-left corner.</span></li>
+        <li><span>Any writing reads normally, and any crown, seal or coat of arms is the right way up. If not, you need a vertical-format flag.</span></li>
+        <li><span>You checked it from where the audience will stand, which is outside for a window.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sources">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="label">Sources</span>
+        <h2>Where these rules come from</h2>
+      </div>
+      <ol class="sources">
+        <li>United States Flag Code, <a href="https://www.law.cornell.edu/uscode/text/4/7" target="_blank" rel="noopener">4 U.S.C. § 7</a>: display against a wall, in a window and over a street.</li>
+        <li>Canadian Heritage, <a href="https://www.canada.ca/en/canadian-heritage/services/flag-canada-etiquette/flying-rules.html" target="_blank" rel="noopener">Rules for flying the National Flag of Canada</a>.</li>
+        <li>The Flag Institute, <a href="https://www.flaginstitute.org/wp/uk-flags/british-flag-protocol/" target="_blank" rel="noopener">UK flag protocol</a> and <a href="https://www.flaginstitute.org/wp/uk-flags/union-flag-specification/" target="_blank" rel="noopener">Union Flag specification</a>.</li>
+        <li>Flags of the World, <a href="https://www.fotw.info/flags/xf-vert.html" target="_blank" rel="noopener">Vertical hoisting of flags</a> and <a href="https://www.fotw.info/flags/li.html" target="_blank" rel="noopener">Liechtenstein</a>.</li>
+        <li>Philippines, <a href="https://lawphil.net/statutes/repacts/ra1998/ra_8491_1998.html" target="_blank" rel="noopener">Republic Act No. 8491</a>, the Flag and Heraldic Code.</li>
+        <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia" target="_blank" rel="noopener">Flag of Saudi Arabia</a> and <a href="https://en.wikipedia.org/wiki/List_of_aspect_ratios_of_national_flags" target="_blank" rel="noopener">List of aspect ratios of national flags</a>.</li>
+        <li>Flag images: <a href="https://github.com/hampusborgos/country-flags" target="_blank" rel="noopener">hampusborgos/country-flags</a>, public-domain renders from Wikimedia Commons at official proportions.</li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Vertical pictures are generated from the horizontal flag by the general rule, so emblems and writing appear on their side; the entries say when a purpose-made vertical flag is the better choice. For official or ceremonial displays, check the flag rules of the country concerned.</div>
+</footer>
+
+<script src="countries.js"></script>
+<script>
+(function () {
+  "use strict";
+  var C = window.COUNTRIES || [];
+  var byCode = {};
+  C.forEach(function (c) { byCode[c.c] = c; });
+
+  function img(c) { return "flags/" + c.c + ".svg"; }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (m) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[m]; }); }
+  function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+  function group(c) { return c.t === "p" ? "p" : c.t === "e" && c.c !== "sa" && c.c !== "py" ? "e" : "x"; }
+
+  // ---------- Directions ----------
+  function horizontal(c) {
+    if (c.t === "np") return "Attach the straight left edge to the pole, with the larger pennant at the bottom and the moon in the top pennant.";
+    var s = "Attach the hoist, the left edge in the picture, to the pole.";
+    if (c.hoist) s += " The " + c.hoist + " stripe goes next to the pole.";
+    if (c.top) s += " The " + c.top + " stripe goes on top.";
+    if (c.canton) s += " " + cap(c.canton) + " goes in the top corner next to the pole.";
+    if (c.t === "uk") s += " The broad white diagonal goes above the red one in the corner next to the pole.";
+    if (c.em) s += " It has " + c.em + ", so match the picture to get it the right way up.";
+    if (!c.hoist && !c.top && !c.em && !c.canton && c.t !== "uk") s += " Keep it the way up shown in the picture.";
+    return s;
+  }
+  function vertical(c) {
+    if (c.t === "np") return "No standard vertical form. Display it in its own shape.";
+    if (c.t === "uk") return "Hoist edge at the top, quarter turn only. Do not turn it over. The broad white diagonal stays above the red one in the top-left corner.";
+    var s = "Hoist edge at the top, then turn it over so the corner that was top left stays at the viewer's top left.";
+    if (c.top) s += " The " + c.top + " stripe ends up on the viewer's left.";
+    if (c.hoist) s += " The " + c.hoist + " stripe runs across the top.";
+    if (c.canton) s += " " + cap(c.canton) + " ends up in the top-left corner.";
+    if (c.t === "e") s += " This flag has " + c.em + ", which a normal flag would show on its side. Use a flag made for vertical hanging if you can get one, or check " + c.n + "'s flag protocol.";
+    return s;
+  }
+  function typeChip(c) {
+    if (c.t === "uk") return '<span class="chip x">Rotate only</span>';
+    if (c.t === "np") return '<span class="chip x">Not rectangular</span>';
+    if (c.c === "sa") return '<span class="chip x">Writing</span>';
+    if (c.c === "py") return '<span class="chip x">Different sides</span>';
+    if (c.t === "e") return '<span class="chip e">Emblem or writing</span>';
+    return '<span class="chip">Simple design</span>';
+  }
+
+  // ---------- Sizes ----------
+  function ftIn(x) {
+    var total = Math.round(x * 12);
+    var ft = Math.floor(total / 12), inch = total % 12;
+    return inch ? ft + " ft " + inch + " in" : ft + " ft";
+  }
+  function sizes(c) {
+    if (c.t === "np") return "Not rectangular; sold by height. A common size is about 90 cm (3 ft) tall.";
+    var a = c.a, imp = [2, 3, 4, 5].map(function (h) { return '<span class="nw">' + h + " ft × " + ftIn(h * a) + "</span>"; });
+    var met = [60, 90, 120, 150].map(function (h) { return '<span class="nw">' + h + " × " + Math.round(h * a) + " cm</span>"; });
+    return imp.join(" · ") + "<br>" + met.join(" · ");
+  }
+
+  // ---------- Buy links ----------
+  function buy(c) {
+    var q = encodeURIComponent(c.n + " flag");
+    var links = [
+      ["Amazon", "https://www.amazon.com/s?k=" + q],
+      ["Amazon UK", "https://www.amazon.co.uk/s?k=" + q],
+      ["eBay", "https://www.ebay.com/sch/i.html?_nkw=" + q],
+      ["Etsy", "https://www.etsy.com/search?q=" + q],
+      ["Walmart", "https://www.walmart.com/search?q=" + q]
+    ];
+    return links.map(function (l) { return '<a href="' + l[1] + '" target="_blank" rel="noopener">' + l[0] + "</a>"; }).join("");
+  }
+
+  // ---------- Rows ----------
+  function row(c) {
+    var v = c.t === "np"
+      ? '<div class="vnone">No vertical form</div>'
+      : '<div class="vflag' + (c.t === "uk" ? " rot" : "") + '" style="--a:' + c.a + '"><img src="' + img(c) + '" alt="' + esc(c.n) + ' flag hung vertically" loading="lazy" decoding="async"></div>';
+    return '<article class="country" id="' + c.c + '" data-g="' + group(c) + '" data-n="' + esc(c.n.toLowerCase()) + '">' +
+      '<div class="pics">' +
+        '<div class="pic"><span class="label">Horizontal</span><div class="hflag"><img src="' + img(c) + '" alt="Flag of ' + esc(c.n) + '" loading="lazy" decoding="async" width="144" height="' + Math.round(144 / c.a) + '"></div></div>' +
+        '<div class="pic"><span class="label">Vertical</span>' + v + "</div>" +
+      "</div>" +
+      '<div class="info">' +
+        '<div class="info-head"><h3>' + esc(c.n) + "</h3>" + typeChip(c) + '<span class="chip">Ratio ' + esc(c.r) + "</span></div>" +
+        '<div class="dir"><div><span class="label">Horizontal</span><p>' + esc(horizontal(c)) + "</p></div>" +
+        '<div><span class="label">Vertical</span><p>' + esc(vertical(c)) + "</p></div></div>" +
+        (c.note ? '<p class="note">' + esc(c.note) + "</p>" : "") +
+        '<div class="facts"><div><span class="label">Sizes at official ratio ' + esc(c.r) + '</span><span class="sizes">' + sizes(c) + "</span></div>" +
+        '<div><span class="label">Where to buy</span><span class="buy">' + buy(c) + "</span></div></div>" +
+        (c.t === "np" ? "" : '<div class="row-actions"><button type="button" class="linkbtn" data-demo="' + c.c + '">Show the turn in the demo</button></div>') +
+      "</div></article>";
+  }
+
+  var list = document.getElementById("list");
+  list.innerHTML = C.map(row).join("");
+  var rows = Array.prototype.slice.call(list.children);
+
+  // ---------- Filter ----------
+  var q = document.getElementById("q"), count = document.getElementById("count"), empty = document.getElementById("empty");
+  var filter = "all";
+  function applyFilter() {
+    var term = q.value.trim().toLowerCase(), shown = 0;
+    rows.forEach(function (r) {
+      var ok = (filter === "all" || r.dataset.g === filter) && (!term || r.dataset.n.indexOf(term) !== -1 || r.id === term);
+      r.hidden = !ok;
+      if (ok) shown++;
+    });
+    count.textContent = shown + " of " + rows.length;
+    empty.hidden = shown !== 0;
+  }
+  q.addEventListener("input", applyFilter);
+  Array.prototype.forEach.call(document.querySelectorAll(".seg button"), function (b) {
+    b.addEventListener("click", function () {
+      filter = b.dataset.f;
+      Array.prototype.forEach.call(b.parentNode.children, function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      applyFilter();
+    });
+  });
+  applyFilter();
+
+  // ---------- Demo ----------
+  var sel = document.getElementById("demoSelect");
+  sel.innerHTML = C.filter(function (c) { return c.t !== "np"; }).map(function (c) { return '<option value="' + c.c + '">' + esc(c.n) + "</option>"; }).join("");
+  var stageFlag = document.getElementById("stageFlag"), stageImg = document.getElementById("stageImg");
+  var stageBadge = document.getElementById("stageBadge"), stageNote = document.getElementById("stageNote");
+  var step3 = document.getElementById("step3Text");
+  var stepBtns = Array.prototype.slice.call(document.querySelectorAll(".step"));
+  var current = byCode.us, timers = [];
+
+  function setStep(n) {
+    var rotateOnly = current.t === "uk";
+    stageFlag.dataset.step = String(n);
+    stepBtns.forEach(function (b) { b.setAttribute("aria-pressed", String(Number(b.dataset.go) === n)); });
+    stageBadge.className = "stage-badge";
+    if (n === 0) {
+      stageBadge.textContent = "Horizontal";
+      stageNote.textContent = "The flag as normally flown, hoist edge against the pole.";
+    } else if (n === 1) {
+      stageBadge.textContent = rotateOnly ? "Correct" : "Not yet";
+      stageBadge.classList.add(rotateOnly ? "ok" : "bad");
+      stageNote.textContent = rotateOnly
+        ? "For the Union Flag, stop here: broad white diagonal uppermost in the top-left corner."
+        : "Hoist at the top, but what was the top-left corner is now on the right.";
+    } else {
+      stageBadge.textContent = rotateOnly ? "Wrong" : "Correct";
+      stageBadge.classList.add(rotateOnly ? "bad" : "ok");
+      stageNote.textContent = rotateOnly
+        ? "Turned over, the Union Flag is upside down: red above the broad white in the top-left corner."
+        : current.t === "e"
+          ? "Canton at the top left, but the emblem is on its side. A vertical-format flag avoids that."
+          : "Turned over: the top-left corner is back at the top left as you look at it.";
+    }
+  }
+  function clearTimers() { timers.forEach(clearTimeout); timers = []; }
+  function play() {
+    clearTimers();
+    setStep(0);
+    timers.push(setTimeout(function () { setStep(1); }, 350));
+    timers.push(setTimeout(function () { setStep(2); }, 1850));
+  }
+  function load(code, animate) {
+    var c = byCode[code];
+    if (!c || c.t === "np") return;
+    current = c;
+    sel.value = code;
+    stageImg.src = img(c);
+    stageImg.alt = "Flag of " + c.n;
+    stageImg.setAttribute("height", Math.round(300 / c.a));
+    step3.textContent = c.t === "uk" ? "Turn it over (don't)" : "Turn it over";
+    if (animate) play(); else { clearTimers(); setStep(c.t === "uk" ? 1 : 2); }
+  }
+  stepBtns.forEach(function (b) { b.addEventListener("click", function () { clearTimers(); setStep(Number(b.dataset.go)); }); });
+  document.getElementById("playBtn").addEventListener("click", play);
+  sel.addEventListener("change", function () { load(sel.value, true); });
+  list.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-demo]");
+    if (!b) return;
+    load(b.dataset.demo, true);
+    document.querySelector(".hero").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  var start = (location.hash || "").slice(1);
+  load(byCode[start] && byCode[start].t !== "np" ? start : "us", false);
+  // Rows are built after the browser's own jump to #code, so jump again once they exist.
+  if (byCode[start]) {
+    var jump = function () { document.getElementById(start).scrollIntoView({ block: "start" }); };
+    jump();
+    window.addEventListener("load", jump);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(jump);
+  }
+})();
+</script>
+</body>
+</html>
