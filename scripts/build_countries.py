@@ -159,6 +159,9 @@ for c in CODES:
     if c in EMBLEM: row["em"] = EMBLEM[c]
     if c in TOP: row["top"] = TOP[c]
     if c in HOIST: row["hoist"] = HOIST[c]
+    # Unicode flag emoji: the two regional indicator symbols for the ISO code. All 197 countries
+    # here have one in the Unicode RGI emoji list (Kosovo uses XK).
+    row["emoji"] = "".join(chr(0x1F1E6 + ord(ch) - ord("A")) for ch in c)
     if c in CANTON: row["canton"] = CANTON[c]
     if c in NOTES: row["note"] = NOTES[c]
     if c in links:

@@ -317,6 +317,10 @@ section { padding-block: 2.5rem; border-top: 1px solid var(--line); }
 .nw { white-space: nowrap; }
 .buy { display: flex; flex-wrap: wrap; gap: 0.3rem 0.8rem; }
 .src { font-size: 0.88rem; overflow-wrap: anywhere; }
+.emoji { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-weight: 400; }
+.emoji-line { font-size: 0.88rem; display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.6rem; }
+.emoji-big { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 1.6rem; line-height: 1; }
+.emoji-line code { font-family: var(--f-mono); font-size: 0.78rem; color: var(--muted); }
 .chip.gov { color: var(--ok); border-color: var(--ok); background: var(--ok-soft); }
 td.wrap-cell { white-space: normal; overflow-wrap: anywhere; min-width: 14rem; }
 .row-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
@@ -416,7 +420,7 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
       <div class="section-head">
         <span class="label">Every country</span>
         <h2>Flags of the world, and how to hang each one</h2>
-        <p class="prose muted">Each entry shows the flag as flown horizontally, with the pole on the left, and hung vertically against a wall as the viewer sees it. The grey bar marks the hoist, the edge with the sleeve or grommets. Proportions are hoist : fly, the official height-to-length ratio.</p>
+        <p class="prose muted">Each entry shows the flag as flown horizontally, with the pole on the left, and hung vertically against a wall as the viewer sees it. The grey bar marks the hoist, the edge with the sleeve or grommets. Proportions are hoist : fly, the official height-to-length ratio. Each entry also gives the country's Unicode flag emoji; on Windows these usually show as two letters instead of a flag.</p>
       </div>
       <div class="toolbar">
         <label for="q" class="label" style="position:absolute;left:-9999px">Search countries</label>
@@ -622,6 +626,9 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
     if (c.t === "e") s += " This flag has " + c.em + ", which a normal flag would show on its side. Use a flag made for vertical hanging if you can get one, or check " + c.n + "'s flag protocol.";
     return s;
   }
+  function codepoints(s) {
+    return Array.from(s).map(function (ch) { return "U+" + ch.codePointAt(0).toString(16).toUpperCase(); }).join(" ");
+  }
   function typeChip(c) {
     if (c.t === "uk") return '<span class="chip x">Rotate only</span>';
     if (c.t === "np") return '<span class="chip x">Not rectangular</span>';
@@ -668,7 +675,8 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
         '<div class="pic"><span class="label">Vertical</span>' + v + "</div>" +
       "</div>" +
       '<div class="info">' +
-        '<div class="info-head"><h3>' + esc(c.n) + "</h3>" + typeChip(c) + '<span class="chip">Ratio ' + esc(c.r) + "</span></div>" +
+        '<div class="info-head"><h3><span class="emoji" aria-hidden="true">' + c.emoji + "</span> " + esc(c.n) + "</h3>" + typeChip(c) + '<span class="chip">Ratio ' + esc(c.r) + "</span></div>" +
+        '<p class="emoji-line"><span class="label">Emoji</span> <span class="emoji-big" aria-label="Flag emoji for ' + esc(c.n) + '">' + c.emoji + '</span> <code>' + codepoints(c.emoji) + '</code> <button type="button" class="linkbtn" data-copy="' + c.emoji + '">Copy emoji</button></p>' +
         '<div class="dir"><div><span class="label">Horizontal</span><p>' + esc(horizontal(c)) + "</p></div>" +
         '<div><span class="label">Vertical</span><p>' + esc(vertical(c)) + "</p></div></div>" +
         (c.note ? '<p class="note">' + esc(c.note) + "</p>" : "") +
@@ -682,7 +690,7 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
   var srcBody = document.getElementById("srcBody");
   if (srcBody) {
     srcBody.innerHTML = C.map(function (c) {
-      return '<tr><td><a href="#' + c.c + '">' + esc(c.n) + "</a></td><td>" + (c.gov ? '<span class="chip gov">Government</span>' : '<span class="chip">Wikipedia</span>') +
+      return '<tr><td><span class="emoji" aria-hidden="true">' + c.emoji + '</span> <a href="#' + c.c + '">' + esc(c.n) + "</a></td><td>" + (c.gov ? '<span class="chip gov">Government</span>' : '<span class="chip">Wikipedia</span>') +
         '</td><td class="wrap-cell"><a href="' + esc(c.src) + '" target="_blank" rel="noopener">' + esc(c.srcLabel) + "</a></td></tr>";
     }).join("");
     var gov = C.filter(function (c) { return c.gov; }).length;
@@ -718,7 +726,7 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
 
   // ---------- Demo ----------
   var sel = document.getElementById("demoSelect");
-  sel.innerHTML = C.filter(function (c) { return c.t !== "np"; }).map(function (c) { return '<option value="' + c.c + '">' + esc(c.n) + "</option>"; }).join("");
+  sel.innerHTML = C.filter(function (c) { return c.t !== "np"; }).map(function (c) { return '<option value="' + c.c + '">' + c.emoji + " " + esc(c.n) + "</option>"; }).join("");
   var stageFlag = document.getElementById("stageFlag"), stageImg = document.getElementById("stageImg");
   var stageBadge = document.getElementById("stageBadge"), stageNote = document.getElementById("stageNote");
   var step3 = document.getElementById("step3Text");
@@ -771,6 +779,17 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
   document.getElementById("playBtn").addEventListener("click", play);
   sel.addEventListener("change", function () { load(sel.value, true); });
   list.addEventListener("click", function (e) {
+    var cp = e.target.closest("[data-copy]");
+    if (cp) {
+      var text = cp.dataset.copy, done = function () { cp.textContent = "Copied"; setTimeout(function () { cp.textContent = "Copy emoji"; }, 1500); };
+      var fallback = function () {
+        var r = document.createRange(), em = cp.parentNode.querySelector(".emoji-big");
+        r.selectNodeContents(em); var sl = window.getSelection(); sl.removeAllRanges(); sl.addRange(r);
+        cp.textContent = "Selected: press Ctrl+C";
+      };
+      try { navigator.clipboard.writeText(text).then(done, fallback); } catch (err) { fallback(); }
+      return;
+    }
     var b = e.target.closest("[data-demo]");
     if (!b) return;
     load(b.dataset.demo, true);
