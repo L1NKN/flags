@@ -27,6 +27,7 @@
   --warn: #8a5a00;
   --warn-soft: #fbf0d9;
   --pole: #3b4658;
+  --nav-h: 2.75rem;
 
   --f-display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --f-body: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -73,7 +74,7 @@
 }
 
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 0.5rem); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body {
   margin: 0;
@@ -111,10 +112,28 @@ p { margin: 0; }
 }
 
 /* ---------- Top nav ---------- */
-.topnav { border-bottom: 1px solid var(--line); background: var(--surface); }
-.topnav .wrap { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; padding-block: 0.6rem; font-size: 0.9rem; }
-.topnav a { text-decoration: none; color: var(--muted); }
+/* Stays at the top of the screen; one line that scrolls sideways on narrow screens. */
+.topnav {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 10;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.topnav .wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  height: var(--nav-h);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.topnav .wrap::-webkit-scrollbar { display: none; }
+.topnav a { text-decoration: none; color: var(--muted); padding-block: 0.35rem; border-bottom: 2px solid transparent; }
 .topnav a:hover { color: var(--accent); }
+.topnav a[aria-current="true"] { color: var(--ink); border-bottom-color: var(--accent); }
 
 /* ---------- Hero ---------- */
 header.hero { padding-block: 2.5rem 2rem; }
@@ -234,7 +253,7 @@ section { padding-block: 2.5rem; border-top: 1px solid var(--line); }
 /* ---------- Directory ---------- */
 .toolbar {
   position: sticky;
-  top: env(safe-area-inset-top, 0px);
+  top: calc(env(safe-area-inset-top, 0px) + var(--nav-h));
   z-index: 5;
   background: var(--paper);
   padding-block: 0.75rem;
@@ -268,7 +287,7 @@ section { padding-block: 2.5rem; border-top: 1px solid var(--line); }
   display: grid;
   grid-template-columns: 15rem minmax(0, 1fr);
   gap: 1rem 1.5rem;
-  scroll-margin-top: 5rem;
+  scroll-margin-top: calc(var(--nav-h) + 5rem);
 }
 .country:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 .pics { display: flex; gap: 1rem; align-items: flex-start; }
@@ -359,7 +378,8 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
   .count { margin-left: 0; }
   .seg { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; scrollbar-width: none; }
   .seg button { flex: 0 0 auto; }
-  .country { scroll-margin-top: 9rem; }
+  .country { scroll-margin-top: calc(var(--nav-h) + 9rem); }
+  .topnav .wrap { -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); mask-image: linear-gradient(to right, #000 85%, transparent); }
 }
 @media (prefers-reduced-motion: reduce) { .stage-flag { transition: none; } }
 </style>
@@ -368,6 +388,7 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
 
 <nav class="topnav" aria-label="Sections">
   <div class="wrap">
+    <a href="#top">The rule</a>
     <a href="#flags">Every country</a>
     <a href="#exceptions">Exceptions</a>
     <a href="#situations">Walls and windows</a>
@@ -378,7 +399,7 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
   </div>
 </nav>
 
-<header class="hero">
+<header class="hero" id="top">
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <span class="label">Flag etiquette · 197 countries</span>
@@ -795,6 +816,20 @@ footer { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var
     load(b.dataset.demo, true);
     document.querySelector(".hero").scrollIntoView({ behavior: "smooth", block: "start" });
   });
+
+  // Underline the nav link for the section on screen.
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll(".topnav a"));
+  if ("IntersectionObserver" in window) {
+    var visible = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { visible[en.target.id] = en.isIntersecting; });
+      var current = navLinks.filter(function (a) { return visible[a.getAttribute("href").slice(1)]; })[0];
+      navLinks.forEach(function (a) { a.setAttribute("aria-current", String(a === current)); });
+      // On narrow screens, slide the bar so the current link is in view.
+      if (current) { var bar = current.parentNode; if (bar.scrollWidth > bar.clientWidth) bar.scrollTo({ left: Math.max(0, current.offsetLeft - 16), behavior: "smooth" }); }
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    navLinks.forEach(function (a) { var el = document.getElementById(a.getAttribute("href").slice(1)); if (el) io.observe(el); });
+  }
 
   var start = (location.hash || "").slice(1);
   load(byCode[start] && byCode[start].t !== "np" ? start : "us", false);
