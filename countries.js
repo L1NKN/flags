@@ -7,7 +7,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "an emblem with writing",
-"note": "The picture shows the black, red and green tricolour of the former Islamic Republic. Since 2021 the Taliban government has used a white flag with the shahada written on it. Both carry writing."
+"emoji": "🇦🇫",
+"note": "The picture shows the black, red and green tricolour of the former Islamic Republic. Since 2021 the Taliban government has used a white flag with the shahada written on it. Both carry writing.",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Afghanistan",
+"srcLabel": "Wikipedia: Flag of Afghanistan",
+"gov": 0
 },
 {
 "c": "al",
@@ -15,7 +19,11 @@ window.COUNTRIES = [
 "a": 1.4,
 "r": "5:7",
 "t": "e",
-"em": "a double-headed eagle"
+"em": "a double-headed eagle",
+"emoji": "🇦🇱",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Albania",
+"srcLabel": "Wikipedia: Flag of Albania",
+"gov": 0
 },
 {
 "c": "dz",
@@ -23,7 +31,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "green"
+"hoist": "green",
+"emoji": "🇩🇿",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Algeria",
+"srcLabel": "Wikipedia: Flag of Algeria",
+"gov": 0
 },
 {
 "c": "ad",
@@ -32,7 +44,11 @@ window.COUNTRIES = [
 "r": "7:10",
 "t": "e",
 "em": "a coat of arms",
-"hoist": "blue"
+"hoist": "blue",
+"emoji": "🇦🇩",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Andorra",
+"srcLabel": "Wikipedia: Flag of Andorra",
+"gov": 0
 },
 {
 "c": "ao",
@@ -40,14 +56,22 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "a machete-and-cog emblem"
+"em": "a machete-and-cog emblem",
+"emoji": "🇦🇴",
+"src": "https://admin.mat.gov.ao/uploads/Manual_Simbolos_Nacionais_v010521_D_1_5aa339ab31.pdf",
+"srcLabel": "Ministry of Territorial Administration: National Symbols Manual (PDF)",
+"gov": 1
 },
 {
 "c": "ag",
 "n": "Antigua and Barbuda",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇦🇬",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Antigua_and_Barbuda",
+"srcLabel": "Wikipedia: Flag of Antigua and Barbuda",
+"gov": 0
 },
 {
 "c": "ar",
@@ -55,7 +79,11 @@ window.COUNTRIES = [
 "a": 1.6,
 "r": "5:8",
 "t": "e",
-"em": "the Sun of May (a sun with a face)"
+"em": "the Sun of May (a sun with a face)",
+"emoji": "🇦🇷",
+"src": "https://www.argentina.gob.ar/interior/asuntos-politicos-e-institucionales/simbolos-nacionales",
+"srcLabel": "Government of Argentina: National symbols",
+"gov": 1
 },
 {
 "c": "am",
@@ -63,7 +91,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇦🇲",
+"src": "https://president.am/en/state-symbols",
+"srcLabel": "President of Armenia: State symbols",
+"gov": 1
 },
 {
 "c": "au",
@@ -71,14 +103,22 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"canton": "the Union Flag"
+"emoji": "🇦🇺",
+"canton": "the Union Flag",
+"src": "https://pmc.gov.au/government/australian-national-flag/australian-national-flag-protocols",
+"srcLabel": "Department of the Prime Minister and Cabinet: Australian National Flag protocols",
+"gov": 1
 },
 {
 "c": "at",
 "n": "Austria",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇦🇹",
+"src": "https://www.bmlv.gv.at/abzeichen/pdf/hoheitszeichen.pdf",
+"srcLabel": "Federal Ministry of Defence: State emblems (PDF)",
+"gov": 1
 },
 {
 "c": "az",
@@ -86,28 +126,44 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "blue"
+"top": "blue",
+"emoji": "🇦🇿",
+"src": "https://en.president.az/azerbaijan/symbols",
+"srcLabel": "President of Azerbaijan: National symbols",
+"gov": 1
 },
 {
 "c": "bh",
 "n": "Bahrain",
 "a": 1.6667,
 "r": "3:5",
-"t": "p"
+"t": "p",
+"emoji": "🇧🇭",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Bahrain",
+"srcLabel": "Wikipedia: Flag of Bahrain",
+"gov": 0
 },
 {
 "c": "bd",
 "n": "Bangladesh",
 "a": 1.6667,
 "r": "3:5",
-"t": "p"
+"t": "p",
+"emoji": "🇧🇩",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Bangladesh",
+"srcLabel": "Wikipedia: Flag of Bangladesh",
+"gov": 0
 },
 {
 "c": "bb",
 "n": "Barbados",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇧🇧",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Barbados",
+"srcLabel": "Wikipedia: Flag of Barbados",
+"gov": 0
 },
 {
 "c": "by",
@@ -115,7 +171,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇧🇾",
+"src": "https://mfa.gov.by/en/sgp/state_symbols/",
+"srcLabel": "Ministry of Foreign Affairs of Belarus: State symbols",
+"gov": 1
 },
 {
 "c": "be",
@@ -123,7 +183,11 @@ window.COUNTRIES = [
 "a": 1.1538,
 "r": "13:15",
 "t": "p",
-"hoist": "black"
+"hoist": "black",
+"emoji": "🇧🇪",
+"src": "https://www.belgium.be/en/about_belgium/country/belgium_in_nutshell/symbols/flags",
+"srcLabel": "Belgium.be (federal government): Belgian flags",
+"gov": 1
 },
 {
 "c": "bz",
@@ -131,7 +195,11 @@ window.COUNTRIES = [
 "a": 1.6667,
 "r": "3:5",
 "t": "e",
-"em": "a coat of arms with a motto"
+"em": "a coat of arms with a motto",
+"emoji": "🇧🇿",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Belize",
+"srcLabel": "Wikipedia: Flag of Belize",
+"gov": 0
 },
 {
 "c": "bj",
@@ -140,7 +208,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "p",
 "top": "yellow",
-"hoist": "green"
+"hoist": "green",
+"emoji": "🇧🇯",
+"src": "https://www.gouv.bj/pages/le-drapeau/",
+"srcLabel": "Government of Benin: Le drapeau",
+"gov": 1
 },
 {
 "c": "bt",
@@ -148,7 +220,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "a dragon"
+"em": "a dragon",
+"emoji": "🇧🇹",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Bhutan",
+"srcLabel": "Wikipedia: Flag of Bhutan",
+"gov": 0
 },
 {
 "c": "bo",
@@ -158,21 +234,33 @@ window.COUNTRIES = [
 "t": "e",
 "em": "a coat of arms",
 "top": "red",
-"note": "The picture shows the state flag with the coat of arms. The plain civil flag without it follows the general rule."
+"emoji": "🇧🇴",
+"note": "The picture shows the state flag with the coat of arms. The plain civil flag without it follows the general rule.",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Bolivia",
+"srcLabel": "Wikipedia: Flag of Bolivia",
+"gov": 0
 },
 {
 "c": "ba",
 "n": "Bosnia and Herzegovina",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇧🇦",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Bosnia_and_Herzegovina",
+"srcLabel": "Wikipedia: Flag of Bosnia and Herzegovina",
+"gov": 0
 },
 {
 "c": "bw",
 "n": "Botswana",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇧🇼",
+"src": "https://botswanamission.ch/national-symbols/",
+"srcLabel": "Permanent Mission of Botswana in Geneva: National symbols",
+"gov": 1
 },
 {
 "c": "br",
@@ -181,7 +269,11 @@ window.COUNTRIES = [
 "r": "7:10",
 "t": "e",
 "em": "a starry globe with the motto “Ordem e Progresso”",
-"note": "Brazil is sometimes listed among countries with a special design for vertical hanging, but that is not confirmed in official sources here."
+"emoji": "🇧🇷",
+"note": "Brazil is sometimes listed among countries with a special design for vertical hanging, but that is not confirmed in official sources here.",
+"src": "https://planalto.gov.br/ccivil_03/leis/L5700compilado.htm",
+"srcLabel": "Presidency of Brazil: Law 5,700 on the national symbols",
+"gov": 1
 },
 {
 "c": "bn",
@@ -189,7 +281,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "e",
-"em": "a crest with Arabic writing"
+"em": "a crest with Arabic writing",
+"emoji": "🇧🇳",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Brunei",
+"srcLabel": "Wikipedia: Flag of Brunei",
+"gov": 0
 },
 {
 "c": "bg",
@@ -197,21 +293,33 @@ window.COUNTRIES = [
 "a": 1.6667,
 "r": "3:5",
 "t": "p",
-"top": "white"
+"top": "white",
+"emoji": "🇧🇬",
+"src": "https://gov.bg/en/About-Bulgaria/NATIONAL-SYMBOLS",
+"srcLabel": "Government of Bulgaria: National symbols",
+"gov": 1
 },
 {
 "c": "bf",
 "n": "Burkina Faso",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇧🇫",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Burkina_Faso",
+"srcLabel": "Wikipedia: Flag of Burkina Faso",
+"gov": 0
 },
 {
 "c": "bi",
 "n": "Burundi",
 "a": 1.6667,
 "r": "3:5",
-"t": "p"
+"t": "p",
+"emoji": "🇧🇮",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Burundi",
+"srcLabel": "Wikipedia: Flag of Burundi",
+"gov": 0
 },
 {
 "c": "kh",
@@ -219,7 +327,11 @@ window.COUNTRIES = [
 "a": 1.5625,
 "r": "16:25",
 "t": "e",
-"em": "Angkor Wat"
+"em": "Angkor Wat",
+"emoji": "🇰🇭",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Cambodia",
+"srcLabel": "Wikipedia: Flag of Cambodia",
+"gov": 0
 },
 {
 "c": "cm",
@@ -227,7 +339,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "green"
+"hoist": "green",
+"emoji": "🇨🇲",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Cameroon",
+"srcLabel": "Wikipedia: Flag of Cameroon",
+"gov": 0
 },
 {
 "c": "ca",
@@ -235,21 +351,33 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"note": "Canadian Heritage says that when the flag hangs vertically, the top of the maple leaf points to the left as seen by the observer. These rules are mandatory on federal properties and at federal events."
+"emoji": "🇨🇦",
+"note": "Canadian Heritage says that when the flag hangs vertically, the top of the maple leaf points to the left as seen by the observer. These rules are mandatory on federal properties and at federal events.",
+"src": "https://www.canada.ca/en/canadian-heritage/services/flag-canada-etiquette/flying-rules.html",
+"srcLabel": "Canadian Heritage: Rules for flying the National Flag of Canada",
+"gov": 1
 },
 {
 "c": "cv",
 "n": "Cape Verde",
 "a": 1.7,
 "r": "10:17",
-"t": "p"
+"t": "p",
+"emoji": "🇨🇻",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Cape_Verde",
+"srcLabel": "Wikipedia: Flag of Cape Verde",
+"gov": 0
 },
 {
 "c": "cf",
 "n": "Central African Republic",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇨🇫",
+"src": "https://en.wikipedia.org/wiki/Flag_of_the_Central_African_Republic",
+"srcLabel": "Wikipedia: Flag of the Central African Republic",
+"gov": 0
 },
 {
 "c": "td",
@@ -257,7 +385,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "blue"
+"hoist": "blue",
+"emoji": "🇹🇩",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Chad",
+"srcLabel": "Wikipedia: Flag of Chad",
+"gov": 0
 },
 {
 "c": "cl",
@@ -265,14 +397,22 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"canton": "the blue square with the white star"
+"emoji": "🇨🇱",
+"canton": "the blue square with the white star",
+"src": "https://www.bcn.cl/leychile/navegar?idNorma=18035",
+"srcLabel": "Library of the National Congress of Chile: Decree 1534 on the national emblems",
+"gov": 1
 },
 {
 "c": "cn",
 "n": "China",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇨🇳",
+"src": "https://en.wikipedia.org/wiki/Flag_of_China",
+"srcLabel": "Wikipedia: Flag of China",
+"gov": 0
 },
 {
 "c": "co",
@@ -280,14 +420,22 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "yellow"
+"top": "yellow",
+"emoji": "🇨🇴",
+"src": "https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=1524",
+"srcLabel": "Función Pública (Government of Colombia): Law 12 of 1984 on the national symbols",
+"gov": 1
 },
 {
 "c": "km",
 "n": "Comoros",
 "a": 1.6667,
 "r": "3:5",
-"t": "p"
+"t": "p",
+"emoji": "🇰🇲",
+"src": "https://en.wikipedia.org/wiki/Flag_of_the_Comoros",
+"srcLabel": "Wikipedia: Flag of the Comoros",
+"gov": 0
 },
 {
 "c": "cr",
@@ -296,7 +444,11 @@ window.COUNTRIES = [
 "r": "3:5",
 "t": "e",
 "em": "a coat of arms",
-"note": "The picture shows the state flag with the coat of arms. The plain civil flag without it follows the general rule."
+"emoji": "🇨🇷",
+"note": "The picture shows the state flag with the coat of arms. The plain civil flag without it follows the general rule.",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Costa_Rica",
+"srcLabel": "Wikipedia: Flag of Costa Rica",
+"gov": 0
 },
 {
 "c": "hr",
@@ -305,14 +457,22 @@ window.COUNTRIES = [
 "r": "1:2",
 "t": "e",
 "em": "a coat of arms",
-"top": "red"
+"top": "red",
+"emoji": "🇭🇷",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Croatia",
+"srcLabel": "Wikipedia: Flag of Croatia",
+"gov": 0
 },
 {
 "c": "cu",
 "n": "Cuba",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇨🇺",
+"src": "https://instituciones.sld.cu/facultadfinlayalbarran/files/2020/01/ley-128-sobre-los-simbolos.pdf",
+"srcLabel": "Law 128 on the national symbols (PDF, hosted on Cuba's public health network)",
+"gov": 1
 },
 {
 "c": "cy",
@@ -320,14 +480,22 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "a map of the island"
+"em": "a map of the island",
+"emoji": "🇨🇾",
+"src": "https://publications.gov.cy/en/assets/user/publications/GAAG/CAAG_EN_2018/4/",
+"srcLabel": "Government of Cyprus: Cyprus at a Glance (flag)",
+"gov": 1
 },
 {
 "c": "cz",
 "n": "Czech Republic",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇨🇿",
+"src": "https://mzv.gov.cz/dublin/en/about_the_czech_republic/czech_state_symbols/index.html",
+"srcLabel": "Czech Ministry of Foreign Affairs: Czech state symbols",
+"gov": 1
 },
 {
 "c": "ci",
@@ -335,28 +503,44 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "orange"
+"hoist": "orange",
+"emoji": "🇨🇮",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Ivory_Coast",
+"srcLabel": "Wikipedia: Flag of Ivory Coast",
+"gov": 0
 },
 {
 "c": "cd",
 "n": "DR Congo",
 "a": 1.3333,
 "r": "3:4",
-"t": "p"
+"t": "p",
+"emoji": "🇨🇩",
+"src": "https://www.presidence.cd/uploads/files/5af308bdec9e1947e26657633ee95550.pdf",
+"srcLabel": "Presidency of the DR Congo: national flag (PDF)",
+"gov": 1
 },
 {
 "c": "dk",
 "n": "Denmark",
 "a": 1.3214,
 "r": "28:37",
-"t": "p"
+"t": "p",
+"emoji": "🇩🇰",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Denmark",
+"srcLabel": "Wikipedia: Flag of Denmark",
+"gov": 0
 },
 {
 "c": "dj",
 "n": "Djibouti",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇩🇯",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Djibouti",
+"srcLabel": "Wikipedia: Flag of Djibouti",
+"gov": 0
 },
 {
 "c": "dm",
@@ -364,7 +548,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "e",
-"em": "a sisserou parrot"
+"em": "a sisserou parrot",
+"emoji": "🇩🇲",
+"src": "https://www.dominica.gov.dm/about-dominica/national-symbols/national-flag",
+"srcLabel": "Government of Dominica: National flag",
+"gov": 1
 },
 {
 "c": "do",
@@ -372,7 +560,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "a coat of arms with mottos"
+"em": "a coat of arms with mottos",
+"emoji": "🇩🇴",
+"src": "https://mirex.gob.do/pdf/dcep/ley_no.210-19_de_los_simbolos_patrios_dominicanos.pdf",
+"srcLabel": "Ministry of Foreign Affairs: Law 210-19 on the national symbols (PDF)",
+"gov": 1
 },
 {
 "c": "ec",
@@ -381,7 +573,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "a coat of arms",
-"top": "yellow"
+"top": "yellow",
+"emoji": "🇪🇨",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Ecuador",
+"srcLabel": "Wikipedia: Flag of Ecuador",
+"gov": 0
 },
 {
 "c": "eg",
@@ -390,7 +586,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "the Eagle of Saladin with writing",
-"top": "red"
+"top": "red",
+"emoji": "🇪🇬",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Egypt",
+"srcLabel": "Wikipedia: Flag of Egypt",
+"gov": 0
 },
 {
 "c": "sv",
@@ -398,7 +598,11 @@ window.COUNTRIES = [
 "a": 1.7725,
 "r": "189:335",
 "t": "e",
-"em": "a coat of arms with writing"
+"em": "a coat of arms with writing",
+"emoji": "🇸🇻",
+"src": "https://transparencia.gob.sv/institutions/rree/documents/75932/download",
+"srcLabel": "Government of El Salvador: Law on the national symbols",
+"gov": 1
 },
 {
 "c": "gq",
@@ -406,7 +610,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "a coat of arms with a motto"
+"em": "a coat of arms with a motto",
+"emoji": "🇬🇶",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Equatorial_Guinea",
+"srcLabel": "Wikipedia: Flag of Equatorial Guinea",
+"gov": 0
 },
 {
 "c": "er",
@@ -414,7 +622,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "e",
-"em": "an olive wreath"
+"em": "an olive wreath",
+"emoji": "🇪🇷",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Eritrea",
+"srcLabel": "Wikipedia: Flag of Eritrea",
+"gov": 0
 },
 {
 "c": "ee",
@@ -422,7 +634,11 @@ window.COUNTRIES = [
 "a": 1.5714,
 "r": "7:11",
 "t": "p",
-"top": "blue"
+"top": "blue",
+"emoji": "🇪🇪",
+"src": "https://www.riigiteataja.ee/en/tolge/pdf/530012023002",
+"srcLabel": "Riigi Teataja (State Gazette): Estonian Flag Act",
+"gov": 1
 },
 {
 "c": "sz",
@@ -430,7 +646,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "a shield and spears"
+"em": "a shield and spears",
+"emoji": "🇸🇿",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Eswatini",
+"srcLabel": "Wikipedia: Flag of Eswatini",
+"gov": 0
 },
 {
 "c": "et",
@@ -438,7 +658,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "green"
+"top": "green",
+"emoji": "🇪🇹",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Ethiopia",
+"srcLabel": "Wikipedia: Flag of Ethiopia",
+"gov": 0
 },
 {
 "c": "fj",
@@ -447,14 +671,22 @@ window.COUNTRIES = [
 "r": "1:2",
 "t": "e",
 "em": "a coat of arms",
-"canton": "the Union Flag"
+"emoji": "🇫🇯",
+"canton": "the Union Flag",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Fiji",
+"srcLabel": "Wikipedia: Flag of Fiji",
+"gov": 0
 },
 {
 "c": "fi",
 "n": "Finland",
 "a": 1.6364,
 "r": "11:18",
-"t": "p"
+"t": "p",
+"emoji": "🇫🇮",
+"src": "https://stm.fi/en/web/intermin/flag-and-arms/about-the-flag/history-of-the-flag",
+"srcLabel": "Ministry of the Interior of Finland: The flag",
+"gov": 1
 },
 {
 "c": "fr",
@@ -462,7 +694,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "blue"
+"hoist": "blue",
+"emoji": "🇫🇷",
+"src": "https://www.elysee.fr/la-presidence/le-drapeau-francais",
+"srcLabel": "Élysée (Presidency of France): Le drapeau français",
+"gov": 1
 },
 {
 "c": "ga",
@@ -470,14 +706,22 @@ window.COUNTRIES = [
 "a": 1.3333,
 "r": "3:4",
 "t": "p",
-"top": "green"
+"top": "green",
+"emoji": "🇬🇦",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Gabon",
+"srcLabel": "Wikipedia: Flag of Gabon",
+"gov": 0
 },
 {
 "c": "ge",
 "n": "Georgia",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇬🇪",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Georgia_(country)",
+"srcLabel": "Wikipedia: Flag of Georgia (country)",
+"gov": 0
 },
 {
 "c": "de",
@@ -486,7 +730,11 @@ window.COUNTRIES = [
 "r": "3:5",
 "t": "p",
 "top": "black",
-"note": "Germany's official flags with the federal eagle are also made as vertical banners with the eagle upright."
+"emoji": "🇩🇪",
+"note": "Germany's official flags with the federal eagle are also made as vertical banners with the eagle upright.",
+"src": "https://www.bundestag.de/parlament/symbole/symbole-197452",
+"srcLabel": "German Bundestag: State symbols",
+"gov": 1
 },
 {
 "c": "gh",
@@ -494,7 +742,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇬🇭",
+"src": "https://newyork.mfa.gov.gh/ghanaflag.aspx",
+"srcLabel": "Ghana Ministry of Foreign Affairs: The Ghana flag",
+"gov": 1
 },
 {
 "c": "gr",
@@ -502,14 +754,22 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"canton": "the blue canton with the white cross"
+"emoji": "🇬🇷",
+"canton": "the blue canton with the white cross",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Greece",
+"srcLabel": "Wikipedia: Flag of Greece",
+"gov": 0
 },
 {
 "c": "gd",
 "n": "Grenada",
 "a": 1.6667,
 "r": "3:5",
-"t": "p"
+"t": "p",
+"emoji": "🇬🇩",
+"src": "https://www.gov.gd/national-symbols",
+"srcLabel": "Government of Grenada: National symbols",
+"gov": 1
 },
 {
 "c": "gt",
@@ -517,7 +777,11 @@ window.COUNTRIES = [
 "a": 1.6,
 "r": "5:8",
 "t": "e",
-"em": "a coat of arms with writing"
+"em": "a coat of arms with writing",
+"emoji": "🇬🇹",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Guatemala",
+"srcLabel": "Wikipedia: Flag of Guatemala",
+"gov": 0
 },
 {
 "c": "gn",
@@ -525,21 +789,33 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "red"
+"hoist": "red",
+"emoji": "🇬🇳",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Guinea",
+"srcLabel": "Wikipedia: Flag of Guinea",
+"gov": 0
 },
 {
 "c": "gw",
 "n": "Guinea-Bissau",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇬🇼",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Guinea-Bissau",
+"srcLabel": "Wikipedia: Flag of Guinea-Bissau",
+"gov": 0
 },
 {
 "c": "gy",
 "n": "Guyana",
 "a": 1.6667,
 "r": "3:5",
-"t": "p"
+"t": "p",
+"emoji": "🇬🇾",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Guyana",
+"srcLabel": "Wikipedia: Flag of Guyana",
+"gov": 0
 },
 {
 "c": "ht",
@@ -547,14 +823,22 @@ window.COUNTRIES = [
 "a": 1.6667,
 "r": "3:5",
 "t": "e",
-"em": "a coat of arms with a motto"
+"em": "a coat of arms with a motto",
+"emoji": "🇭🇹",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Haiti",
+"srcLabel": "Wikipedia: Flag of Haiti",
+"gov": 0
 },
 {
 "c": "hn",
 "n": "Honduras",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇭🇳",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Honduras",
+"srcLabel": "Wikipedia: Flag of Honduras",
+"gov": 0
 },
 {
 "c": "hu",
@@ -562,14 +846,22 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇭🇺",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Hungary",
+"srcLabel": "Wikipedia: Flag of Hungary",
+"gov": 0
 },
 {
 "c": "is",
 "n": "Iceland",
 "a": 1.3889,
 "r": "18:25",
-"t": "p"
+"t": "p",
+"emoji": "🇮🇸",
+"src": "https://www.stjornarradid.is/page/9fcdd004-67cb-4362-8e8e-fbe10ef6098b",
+"srcLabel": "Government of Iceland: Icelandic national flag",
+"gov": 1
 },
 {
 "c": "in",
@@ -577,7 +869,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "saffron"
+"top": "saffron",
+"emoji": "🇮🇳",
+"src": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2022/jul/doc202272573901.pdf",
+"srcLabel": "Ministry of Home Affairs: Flag Code of India FAQ (PDF)",
+"gov": 1
 },
 {
 "c": "id",
@@ -586,7 +882,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "p",
 "top": "red",
-"note": "Red on top. Monaco's flag has the same colours but different proportions (4:5), and Poland's is white over red."
+"emoji": "🇮🇩",
+"note": "Red on top. Monaco's flag has the same colours but different proportions (4:5), and Poland's is white over red.",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Indonesia",
+"srcLabel": "Wikipedia: Flag of Indonesia",
+"gov": 0
 },
 {
 "c": "ir",
@@ -595,7 +895,11 @@ window.COUNTRIES = [
 "r": "4:7",
 "t": "e",
 "em": "an emblem, and the Takbir written along the stripes",
-"top": "green"
+"top": "green",
+"emoji": "🇮🇷",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Iran",
+"srcLabel": "Wikipedia: Flag of Iran",
+"gov": 0
 },
 {
 "c": "iq",
@@ -604,7 +908,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "the words “Allahu Akbar”",
-"top": "red"
+"top": "red",
+"emoji": "🇮🇶",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Iraq",
+"srcLabel": "Wikipedia: Flag of Iraq",
+"gov": 0
 },
 {
 "c": "ie",
@@ -612,14 +920,22 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"hoist": "green"
+"hoist": "green",
+"emoji": "🇮🇪",
+"src": "https://www.gov.ie/en/publication/adc448-the-national-flag",
+"srcLabel": "Government of Ireland: The National Flag",
+"gov": 1
 },
 {
 "c": "il",
 "n": "Israel",
 "a": 1.375,
 "r": "8:11",
-"t": "p"
+"t": "p",
+"emoji": "🇮🇱",
+"src": "https://catalog.archives.gov.il/site/en/chapter/flag",
+"srcLabel": "Israel State Archives: The Flag and the Emblem",
+"gov": 1
 },
 {
 "c": "it",
@@ -627,21 +943,33 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "green"
+"hoist": "green",
+"emoji": "🇮🇹",
+"src": "https://www.difesa.it/assets/allegati/32686/simboli_2giugnotricolore.pdf",
+"srcLabel": "Italian Ministry of Defence: Symbols of the Republic (PDF)",
+"gov": 1
 },
 {
 "c": "jm",
 "n": "Jamaica",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇯🇲",
+"src": "https://jis.gov.jm/information/get-the-facts/the-jamaican-flag/",
+"srcLabel": "Jamaica Information Service: The Jamaican Flag",
+"gov": 1
 },
 {
 "c": "jp",
 "n": "Japan",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇯🇵",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Japan",
+"srcLabel": "Wikipedia: Flag of Japan",
+"gov": 0
 },
 {
 "c": "jo",
@@ -649,7 +977,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "black"
+"top": "black",
+"emoji": "🇯🇴",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Jordan",
+"srcLabel": "Wikipedia: Flag of Jordan",
+"gov": 0
 },
 {
 "c": "kz",
@@ -657,7 +989,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "e",
-"em": "a sun, an eagle and an ornament"
+"em": "a sun, an eagle and an ornament",
+"emoji": "🇰🇿",
+"src": "https://akorda.kz/en/state_symbols/kazakhstan_flag",
+"srcLabel": "President of Kazakhstan (Akorda): State flag",
+"gov": 1
 },
 {
 "c": "ke",
@@ -666,7 +1002,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "a shield and spears",
-"top": "black"
+"top": "black",
+"emoji": "🇰🇪",
+"src": "https://www.president.go.ke/www/en/category/state_symbols.php",
+"srcLabel": "State House Kenya: National symbols",
+"gov": 1
 },
 {
 "c": "ki",
@@ -674,7 +1014,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "e",
-"em": "a frigatebird over a rising sun"
+"em": "a frigatebird over a rising sun",
+"emoji": "🇰🇮",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Kiribati",
+"srcLabel": "Wikipedia: Flag of Kiribati",
+"gov": 0
 },
 {
 "c": "xk",
@@ -682,7 +1026,11 @@ window.COUNTRIES = [
 "a": 1.4,
 "r": "5:7",
 "t": "e",
-"em": "a map of Kosovo"
+"em": "a map of Kosovo",
+"emoji": "🇽🇰",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Kosovo",
+"srcLabel": "Wikipedia: Flag of Kosovo",
+"gov": 0
 },
 {
 "c": "kw",
@@ -690,28 +1038,44 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "green"
+"top": "green",
+"emoji": "🇰🇼",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Kuwait",
+"srcLabel": "Wikipedia: Flag of Kuwait",
+"gov": 0
 },
 {
 "c": "kg",
 "n": "Kyrgyzstan",
 "a": 1.6667,
 "r": "3:5",
-"t": "p"
+"t": "p",
+"emoji": "🇰🇬",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Kyrgyzstan",
+"srcLabel": "Wikipedia: Flag of Kyrgyzstan",
+"gov": 0
 },
 {
 "c": "la",
 "n": "Laos",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇱🇦",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Laos",
+"srcLabel": "Wikipedia: Flag of Laos",
+"gov": 0
 },
 {
 "c": "lv",
 "n": "Latvia",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇱🇻",
+"src": "https://www.saeima.lv/LapasEnglish/Constitution_Visa.htm",
+"srcLabel": "Saeima: Constitution of Latvia (Article 4, national flag)",
+"gov": 1
 },
 {
 "c": "lb",
@@ -719,7 +1083,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "a cedar tree"
+"em": "a cedar tree",
+"emoji": "🇱🇧",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Lebanon",
+"srcLabel": "Wikipedia: Flag of Lebanon",
+"gov": 0
 },
 {
 "c": "ls",
@@ -728,7 +1096,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "a Basotho hat",
-"top": "blue"
+"top": "blue",
+"emoji": "🇱🇸",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Lesotho",
+"srcLabel": "Wikipedia: Flag of Lesotho",
+"gov": 0
 },
 {
 "c": "lr",
@@ -736,7 +1108,11 @@ window.COUNTRIES = [
 "a": 1.9,
 "r": "10:19",
 "t": "p",
-"canton": "the blue canton with the white star"
+"emoji": "🇱🇷",
+"canton": "the blue canton with the white star",
+"src": "https://mofa.gov.lr/node/6597",
+"srcLabel": "Ministry of Foreign Affairs of Liberia: National Flag Day",
+"gov": 1
 },
 {
 "c": "ly",
@@ -744,7 +1120,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇱🇾",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Libya",
+"srcLabel": "Wikipedia: Flag of Libya",
+"gov": 0
 },
 {
 "c": "li",
@@ -753,7 +1133,11 @@ window.COUNTRIES = [
 "r": "3:5",
 "t": "e",
 "em": "a crown",
-"note": "Flags of the World describes Liechtenstein's vertical flag as the horizontal design turned a quarter turn anticlockwise, with the crown kept upright in the top-left corner."
+"emoji": "🇱🇮",
+"note": "Flags of the World describes Liechtenstein's vertical flag as the horizontal design turned a quarter turn anticlockwise, with the crown kept upright in the top-left corner.",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Liechtenstein",
+"srcLabel": "Wikipedia: Flag of Liechtenstein",
+"gov": 0
 },
 {
 "c": "lt",
@@ -761,7 +1145,11 @@ window.COUNTRIES = [
 "a": 1.6667,
 "r": "3:5",
 "t": "p",
-"top": "yellow"
+"top": "yellow",
+"emoji": "🇱🇹",
+"src": "https://e-seimas.lrs.lt/rs/legalact/TAD/54d3e0e02c1411e8a1edec7ada37067a",
+"srcLabel": "Seimas of Lithuania: Law on the National Flag",
+"gov": 1
 },
 {
 "c": "lu",
@@ -769,7 +1157,11 @@ window.COUNTRIES = [
 "a": 1.6667,
 "r": "3:5",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇱🇺",
+"src": "https://sip.gouvernement.lu/en/publications/minist-etat/sip/brochure/a-propos/A_propos_Symboles.html",
+"srcLabel": "Government of Luxembourg: Symbols of the State and of the Nation",
+"gov": 1
 },
 {
 "c": "mg",
@@ -778,7 +1170,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "p",
 "top": "red",
-"hoist": "white"
+"hoist": "white",
+"emoji": "🇲🇬",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Madagascar",
+"srcLabel": "Wikipedia: Flag of Madagascar",
+"gov": 0
 },
 {
 "c": "mw",
@@ -786,7 +1182,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "black"
+"top": "black",
+"emoji": "🇲🇼",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Malawi",
+"srcLabel": "Wikipedia: Flag of Malawi",
+"gov": 0
 },
 {
 "c": "my",
@@ -794,14 +1194,22 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"canton": "the blue canton with the crescent and star"
+"emoji": "🇲🇾",
+"canton": "the blue canton with the crescent and star",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Malaysia",
+"srcLabel": "Wikipedia: Flag of Malaysia",
+"gov": 0
 },
 {
 "c": "mv",
 "n": "Maldives",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇲🇻",
+"src": "https://storage.googleapis.com/presidency.gov.mv/Documents/ConstitutionOfMaldives.pdf",
+"srcLabel": "President's Office of the Maldives: Constitution, Schedule 3 (PDF)",
+"gov": 1
 },
 {
 "c": "ml",
@@ -809,7 +1217,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "green"
+"hoist": "green",
+"emoji": "🇲🇱",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Mali",
+"srcLabel": "Wikipedia: Flag of Mali",
+"gov": 0
 },
 {
 "c": "mt",
@@ -818,21 +1230,33 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "the George Cross",
-"hoist": "white"
+"hoist": "white",
+"emoji": "🇲🇹",
+"src": "https://www.gov.mt/en/About%20Malta/Pages/Flags-Symbols-and-their-use.aspx",
+"srcLabel": "Government of Malta: Flags, symbols and their use",
+"gov": 1
 },
 {
 "c": "mh",
 "n": "Marshall Islands",
 "a": 1.9,
 "r": "10:19",
-"t": "p"
+"t": "p",
+"emoji": "🇲🇭",
+"src": "https://en.wikipedia.org/wiki/Flag_of_the_Marshall_Islands",
+"srcLabel": "Wikipedia: Flag of the Marshall Islands",
+"gov": 0
 },
 {
 "c": "mr",
 "n": "Mauritania",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇲🇷",
+"src": "https://presidence.mr/fr/node/746",
+"srcLabel": "Presidency of Mauritania: National symbols",
+"gov": 1
 },
 {
 "c": "mu",
@@ -840,7 +1264,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇲🇺",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Mauritius",
+"srcLabel": "Wikipedia: Flag of Mauritius",
+"gov": 0
 },
 {
 "c": "mx",
@@ -849,14 +1277,22 @@ window.COUNTRIES = [
 "r": "4:7",
 "t": "e",
 "em": "an eagle on a cactus",
-"hoist": "green"
+"hoist": "green",
+"emoji": "🇲🇽",
+"src": "https://www.diputados.gob.mx/LeyesBiblio/ref/lebhn.htm",
+"srcLabel": "Chamber of Deputies of Mexico: Law on the National Coat of Arms, Flag and Anthem",
+"gov": 1
 },
 {
 "c": "fm",
 "n": "Micronesia",
 "a": 1.9,
 "r": "10:19",
-"t": "p"
+"t": "p",
+"emoji": "🇫🇲",
+"src": "https://en.wikipedia.org/wiki/Flag_of_the_Federated_States_of_Micronesia",
+"srcLabel": "Wikipedia: Flag of the Federated States of Micronesia",
+"gov": 0
 },
 {
 "c": "md",
@@ -865,7 +1301,11 @@ window.COUNTRIES = [
 "r": "1:2",
 "t": "e",
 "em": "a coat of arms",
-"hoist": "blue"
+"hoist": "blue",
+"emoji": "🇲🇩",
+"src": "https://gov.md/en/print/pdf/node/7752",
+"srcLabel": "Government of Moldova: State Flag Day",
+"gov": 1
 },
 {
 "c": "mc",
@@ -874,7 +1314,11 @@ window.COUNTRIES = [
 "r": "4:5",
 "t": "p",
 "top": "red",
-"note": "Red on top. Indonesia's flag has the same colours but different proportions (2:3)."
+"emoji": "🇲🇨",
+"note": "Red on top. Indonesia's flag has the same colours but different proportions (2:3).",
+"src": "https://en.gouv.mc/Government-Institutions/History-and-Heritage/Symbols/Monegasque-flag",
+"srcLabel": "Government of Monaco: The Monegasque flag",
+"gov": 1
 },
 {
 "c": "mn",
@@ -882,7 +1326,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "e",
-"em": "the Soyombo symbol"
+"em": "the Soyombo symbol",
+"emoji": "🇲🇳",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Mongolia",
+"srcLabel": "Wikipedia: Flag of Mongolia",
+"gov": 0
 },
 {
 "c": "me",
@@ -890,14 +1338,22 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "e",
-"em": "a coat of arms"
+"em": "a coat of arms",
+"emoji": "🇲🇪",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Montenegro",
+"srcLabel": "Wikipedia: Flag of Montenegro",
+"gov": 0
 },
 {
 "c": "ma",
 "n": "Morocco",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇲🇦",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Morocco",
+"srcLabel": "Wikipedia: Flag of Morocco",
+"gov": 0
 },
 {
 "c": "mz",
@@ -905,28 +1361,44 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "a rifle, a hoe and a book"
+"em": "a rifle, a hoe and a book",
+"emoji": "🇲🇿",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Mozambique",
+"srcLabel": "Wikipedia: Flag of Mozambique",
+"gov": 0
 },
 {
 "c": "mm",
 "n": "Myanmar",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇲🇲",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Myanmar",
+"srcLabel": "Wikipedia: Flag of Myanmar",
+"gov": 0
 },
 {
 "c": "na",
 "n": "Namibia",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇳🇦",
+"src": "https://www.embassyofnamibia.fr/symbols-of-the-state.php",
+"srcLabel": "Embassy of Namibia in France: National symbols",
+"gov": 1
 },
 {
 "c": "nr",
 "n": "Nauru",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇳🇷",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Nauru",
+"srcLabel": "Wikipedia: Flag of Nauru",
+"gov": 0
 },
 {
 "c": "np",
@@ -934,7 +1406,11 @@ window.COUNTRIES = [
 "a": 0.8203,
 "r": "not rectangular",
 "t": "np",
-"note": "Nepal's flag is two stacked pennants and the only non-rectangular national flag. The hoist is the straight left edge. There is no standard vertical form, so display it in its own shape."
+"emoji": "🇳🇵",
+"note": "Nepal's flag is two stacked pennants and the only non-rectangular national flag. The hoist is the straight left edge. There is no standard vertical form, so display it in its own shape.",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Nepal",
+"srcLabel": "Wikipedia: Flag of Nepal",
+"gov": 0
 },
 {
 "c": "nl",
@@ -942,7 +1418,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇳🇱",
+"src": "https://www.rijksoverheid.nl/onderwerpen/grondwet-en-statuut/vraag-en-antwoord/wanneer-kan-ik-de-vlag-uithangen-en-wat-is-de-vlaginstructie",
+"srcLabel": "Government of the Netherlands: Flying the flag and the flag instruction",
+"gov": 1
 },
 {
 "c": "nz",
@@ -950,7 +1430,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"canton": "the Union Flag"
+"emoji": "🇳🇿",
+"canton": "the Union Flag",
+"src": "https://mch.govt.nz/node/260",
+"srcLabel": "Manatū Taonga (Ministry for Culture and Heritage): New Zealand flag",
+"gov": 1
 },
 {
 "c": "ni",
@@ -958,7 +1442,11 @@ window.COUNTRIES = [
 "a": 1.6667,
 "r": "3:5",
 "t": "e",
-"em": "a coat of arms with writing"
+"em": "a coat of arms with writing",
+"emoji": "🇳🇮",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Nicaragua",
+"srcLabel": "Wikipedia: Flag of Nicaragua",
+"gov": 0
 },
 {
 "c": "ne",
@@ -966,35 +1454,55 @@ window.COUNTRIES = [
 "a": 1.1667,
 "r": "6:7",
 "t": "p",
-"top": "orange"
+"top": "orange",
+"emoji": "🇳🇪",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Niger",
+"srcLabel": "Wikipedia: Flag of Niger",
+"gov": 0
 },
 {
 "c": "ng",
 "n": "Nigeria",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇳🇬",
+"src": "https://www.foreignaffairs.gov.ng/nigeria/national-symbols",
+"srcLabel": "Ministry of Foreign Affairs of Nigeria: National symbols",
+"gov": 1
 },
 {
 "c": "kp",
 "n": "North Korea",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇰🇵",
+"src": "https://en.wikipedia.org/wiki/Flag_of_North_Korea",
+"srcLabel": "Wikipedia: Flag of North Korea",
+"gov": 0
 },
 {
 "c": "mk",
 "n": "North Macedonia",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇲🇰",
+"src": "https://en.wikipedia.org/wiki/Flag_of_North_Macedonia",
+"srcLabel": "Wikipedia: Flag of North Macedonia",
+"gov": 0
 },
 {
 "c": "no",
 "n": "Norway",
 "a": 1.375,
 "r": "8:11",
-"t": "p"
+"t": "p",
+"emoji": "🇳🇴",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Norway",
+"srcLabel": "Wikipedia: Flag of Norway",
+"gov": 0
 },
 {
 "c": "om",
@@ -1002,7 +1510,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "e",
-"em": "the national emblem"
+"em": "the national emblem",
+"emoji": "🇴🇲",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Oman",
+"srcLabel": "Wikipedia: Flag of Oman",
+"gov": 0
 },
 {
 "c": "pk",
@@ -1010,14 +1522,22 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "white"
+"hoist": "white",
+"emoji": "🇵🇰",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Pakistan",
+"srcLabel": "Wikipedia: Flag of Pakistan",
+"gov": 0
 },
 {
 "c": "pw",
 "n": "Palau",
 "a": 1.6,
 "r": "5:8",
-"t": "p"
+"t": "p",
+"emoji": "🇵🇼",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Palau",
+"srcLabel": "Wikipedia: Flag of Palau",
+"gov": 0
 },
 {
 "c": "ps",
@@ -1025,14 +1545,22 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "black"
+"top": "black",
+"emoji": "🇵🇸",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Palestine",
+"srcLabel": "Wikipedia: Flag of Palestine",
+"gov": 0
 },
 {
 "c": "pa",
 "n": "Panama",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇵🇦",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Panama",
+"srcLabel": "Wikipedia: Flag of Panama",
+"gov": 0
 },
 {
 "c": "pg",
@@ -1040,7 +1568,11 @@ window.COUNTRIES = [
 "a": 1.3333,
 "r": "3:4",
 "t": "e",
-"em": "a bird of paradise"
+"em": "a bird of paradise",
+"emoji": "🇵🇬",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Papua_New_Guinea",
+"srcLabel": "Wikipedia: Flag of Papua New Guinea",
+"gov": 0
 },
 {
 "c": "py",
@@ -1049,7 +1581,11 @@ window.COUNTRIES = [
 "r": "11:20",
 "t": "e",
 "em": "a different emblem on each side",
-"note": "Paraguay's flag has the national coat of arms on the front and the treasury seal on the back. Turning it over for vertical hanging shows the back."
+"emoji": "🇵🇾",
+"note": "Paraguay's flag has the national coat of arms on the front and the treasury seal on the back. Turning it over for vertical hanging shows the back.",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Paraguay",
+"srcLabel": "Wikipedia: Flag of Paraguay",
+"gov": 0
 },
 {
 "c": "pe",
@@ -1058,7 +1594,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "a coat of arms",
-"note": "The picture shows the state flag with the coat of arms. The plain civil flag without it follows the general rule."
+"emoji": "🇵🇪",
+"note": "The picture shows the state flag with the coat of arms. The plain civil flag without it follows the general rule.",
+"src": "https://busquedas.elperuano.pe/dispositivo/NL/2363369-4",
+"srcLabel": "El Peruano (official gazette): Law 32251 on the national symbols",
+"gov": 1
 },
 {
 "c": "ph",
@@ -1067,7 +1607,11 @@ window.COUNTRIES = [
 "r": "1:2",
 "t": "p",
 "top": "blue",
-"note": "Philippine law (Republic Act 8491) has the blue stripe on top in peacetime and the red stripe on top only in a state of war. Hung vertically, the blue field goes on the viewer's left in peacetime."
+"emoji": "🇵🇭",
+"note": "Philippine law (Republic Act 8491) has the blue stripe on top in peacetime and the red stripe on top only in a state of war. Hung vertically, the blue field goes on the viewer's left in peacetime.",
+"src": "https://jeddahpcg.dfa.gov.ph/179-flag-properly-display",
+"srcLabel": "Department of Foreign Affairs of the Philippines: How to display the Philippine flag",
+"gov": 1
 },
 {
 "c": "pl",
@@ -1076,7 +1620,11 @@ window.COUNTRIES = [
 "r": "5:8",
 "t": "p",
 "top": "white",
-"note": "White on top. Upside down, it shows the red-over-white colours of Indonesia and Monaco."
+"emoji": "🇵🇱",
+"note": "White on top. Upside down, it shows the red-over-white colours of Indonesia and Monaco.",
+"src": "https://zpe.gov.pl/a/symbole-narodowe/DvmU2DtUI",
+"srcLabel": "Government of Poland (Integrated Education Platform): National symbols",
+"gov": 1
 },
 {
 "c": "pt",
@@ -1085,21 +1633,33 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "the armillary sphere and coat of arms",
-"hoist": "green"
+"hoist": "green",
+"emoji": "🇵🇹",
+"src": "https://www.dge.mec.pt/sites/default/files/ficheiros/constpt2005.pdf",
+"srcLabel": "Portuguese Directorate-General for Education: Constitution, Article 11 (PDF)",
+"gov": 1
 },
 {
 "c": "qa",
 "n": "Qatar",
 "a": 2.5455,
 "r": "11:28",
-"t": "p"
+"t": "p",
+"emoji": "🇶🇦",
+"src": "https://mofa.gov.qa/en/state-of-qatar/Key-Facts-and-Information/national-flag",
+"srcLabel": "Ministry of Foreign Affairs of Qatar: National flag",
+"gov": 1
 },
 {
 "c": "cg",
 "n": "Republic of the Congo",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇨🇬",
+"src": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_the_Congo",
+"srcLabel": "Wikipedia: Flag of the Republic of the Congo",
+"gov": 0
 },
 {
 "c": "ro",
@@ -1107,7 +1667,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "blue"
+"hoist": "blue",
+"emoji": "🇷🇴",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Romania",
+"srcLabel": "Wikipedia: Flag of Romania",
+"gov": 0
 },
 {
 "c": "ru",
@@ -1115,35 +1679,55 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "white"
+"top": "white",
+"emoji": "🇷🇺",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Russia",
+"srcLabel": "Wikipedia: Flag of Russia",
+"gov": 0
 },
 {
 "c": "rw",
 "n": "Rwanda",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇷🇼",
+"src": "https://www.gov.rw/documents/national-symbols",
+"srcLabel": "Government of Rwanda: National symbols",
+"gov": 1
 },
 {
 "c": "kn",
 "n": "Saint Kitts and Nevis",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇰🇳",
+"src": "https://www.gov.kn/skn-national-symbols/",
+"srcLabel": "Government of St Kitts and Nevis: The national symbols",
+"gov": 1
 },
 {
 "c": "lc",
 "n": "Saint Lucia",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇱🇨",
+"src": "https://archive.stlucia.gov.lc/pr2004/january/national_symbols_awareness_campaign.htm",
+"srcLabel": "Government of Saint Lucia (archive): National symbols",
+"gov": 1
 },
 {
 "c": "vc",
 "n": "Saint Vincent and the Grenadines",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇻🇨",
+"src": "https://foreign.gov.vc/foreign/index.php/the-national-flag",
+"srcLabel": "Ministry of Foreign Affairs of St Vincent and the Grenadines: The national flag",
+"gov": 1
 },
 {
 "c": "ws",
@@ -1151,7 +1735,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"canton": "the blue canton with the Southern Cross"
+"emoji": "🇼🇸",
+"canton": "the blue canton with the Southern Cross",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Samoa",
+"srcLabel": "Wikipedia: Flag of Samoa",
+"gov": 0
 },
 {
 "c": "sm",
@@ -1159,7 +1747,11 @@ window.COUNTRIES = [
 "a": 1.3333,
 "r": "3:4",
 "t": "e",
-"em": "a coat of arms"
+"em": "a coat of arms",
+"emoji": "🇸🇲",
+"src": "https://gov.sm/pub1/GovSM/dam/jcr:e3bb8fac-560f-46fc-8892-d59a7be8a1e4/Inno%20Nazionale%20-%20Bandiera%20e%20Stemma.pdf",
+"srcLabel": "Government of San Marino: Anthem, flag and coat of arms (PDF)",
+"gov": 1
 },
 {
 "c": "sa",
@@ -1168,7 +1760,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "the shahada (written creed) and a sword",
-"note": "The flag is made double-sided so the shahada reads correctly, right to left, from either side. Turning a normal flag sideways leaves the writing running vertically. Purpose-made vertical versions with the inscription and sword rotated are reported, and some sources say it should not be hung vertically at all."
+"emoji": "🇸🇦",
+"note": "The flag is made double-sided so the shahada reads correctly, right to left, from either side. Turning a normal flag sideways leaves the writing running vertically. Purpose-made vertical versions with the inscription and sword rotated are reported, and some sources say it should not be hung vertically at all.",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Saudi_Arabia",
+"srcLabel": "Wikipedia: Flag of Saudi Arabia",
+"gov": 0
 },
 {
 "c": "sn",
@@ -1176,7 +1772,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"hoist": "green"
+"hoist": "green",
+"emoji": "🇸🇳",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Senegal",
+"srcLabel": "Wikipedia: Flag of Senegal",
+"gov": 0
 },
 {
 "c": "rs",
@@ -1186,14 +1786,22 @@ window.COUNTRIES = [
 "t": "e",
 "em": "a coat of arms",
 "top": "red",
-"note": "The picture shows the state flag with the coat of arms. The plain national flag without it follows the general rule."
+"emoji": "🇷🇸",
+"note": "The picture shows the state flag with the coat of arms. The plain national flag without it follows the general rule.",
+"src": "https://www.srbija.gov.rs/tekst/en/130128/national-symbols.php",
+"srcLabel": "Government of Serbia: National symbols",
+"gov": 1
 },
 {
 "c": "sc",
 "n": "Seychelles",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇸🇨",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Seychelles",
+"srcLabel": "Wikipedia: Flag of Seychelles",
+"gov": 0
 },
 {
 "c": "sl",
@@ -1201,14 +1809,22 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "green"
+"top": "green",
+"emoji": "🇸🇱",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Sierra_Leone",
+"srcLabel": "Wikipedia: Flag of Sierra Leone",
+"gov": 0
 },
 {
 "c": "sg",
 "n": "Singapore",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇸🇬",
+"src": "https://mccy.gov.sg/sector/initiatives/national-identity-and-symbols",
+"srcLabel": "Ministry of Culture, Community and Youth: National identity and symbols",
+"gov": 1
 },
 {
 "c": "sk",
@@ -1217,7 +1833,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "a coat of arms",
-"top": "white"
+"top": "white",
+"emoji": "🇸🇰",
+"src": "https://www.minv.sk/swift_data/source/verejna_sprava/documents/statne_symboly/statne_symboly.pdf",
+"srcLabel": "Ministry of the Interior of Slovakia: State symbols (PDF)",
+"gov": 1
 },
 {
 "c": "si",
@@ -1226,28 +1846,44 @@ window.COUNTRIES = [
 "r": "1:2",
 "t": "e",
 "em": "a coat of arms",
-"top": "white"
+"top": "white",
+"emoji": "🇸🇮",
+"src": "https://www.gov.si/teme/drzavni-simboli/",
+"srcLabel": "Government of Slovenia: State symbols",
+"gov": 1
 },
 {
 "c": "sb",
 "n": "Solomon Islands",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇸🇧",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Solomon_Islands",
+"srcLabel": "Wikipedia: Flag of Solomon Islands",
+"gov": 0
 },
 {
 "c": "so",
 "n": "Somalia",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇸🇴",
+"src": "https://villasomalia.gov.so/state-symbols/",
+"srcLabel": "Villa Somalia (Office of the President): State symbols",
+"gov": 1
 },
 {
 "c": "za",
 "n": "South Africa",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇿🇦",
+"src": "https://www.gov.za/about-sa/national-flag-0",
+"srcLabel": "South African Government: National flag",
+"gov": 1
 },
 {
 "c": "kr",
@@ -1256,7 +1892,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "the taegeuk and four trigrams",
-"note": "The arrangement of the trigrams and of the red and blue halves of the taegeuk changes if the flag is turned the wrong way, so check it carefully against the picture."
+"emoji": "🇰🇷",
+"note": "The arrangement of the trigrams and of the red and blue halves of the taegeuk changes if the flag is turned the wrong way, so check it carefully against the picture.",
+"src": "https://www.mois.go.kr/eng/sub/a03/nationalSymbol/screen.do",
+"srcLabel": "Ministry of the Interior and Safety: The national flag (Taegeukgi)",
+"gov": 1
 },
 {
 "c": "ss",
@@ -1264,7 +1904,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "black"
+"top": "black",
+"emoji": "🇸🇸",
+"src": "https://en.wikipedia.org/wiki/Flag_of_South_Sudan",
+"srcLabel": "Wikipedia: Flag of South Sudan",
+"gov": 0
 },
 {
 "c": "es",
@@ -1272,7 +1916,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "a coat of arms"
+"em": "a coat of arms",
+"emoji": "🇪🇸",
+"src": "https://administracion.gob.es/pag_Home/espanaAdmon/comoSeOrganizaEstado/simbolosEstado.html",
+"srcLabel": "Government of Spain (administracion.gob.es): Symbols of the State",
+"gov": 1
 },
 {
 "c": "lk",
@@ -1280,7 +1928,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "e",
-"em": "a lion holding a sword"
+"em": "a lion holding a sword",
+"emoji": "🇱🇰",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Sri_Lanka",
+"srcLabel": "Wikipedia: Flag of Sri Lanka",
+"gov": 0
 },
 {
 "c": "sd",
@@ -1288,21 +1940,33 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇸🇩",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Sudan",
+"srcLabel": "Wikipedia: Flag of Sudan",
+"gov": 0
 },
 {
 "c": "sr",
 "n": "Suriname",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇸🇷",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Suriname",
+"srcLabel": "Wikipedia: Flag of Suriname",
+"gov": 0
 },
 {
 "c": "se",
 "n": "Sweden",
 "a": 1.6,
 "r": "5:8",
-"t": "p"
+"t": "p",
+"emoji": "🇸🇪",
+"src": "https://data.riksdagen.se/dokument/sfs-1982-269.html",
+"srcLabel": "Riksdag: Act (1982:269) on the flag of Sweden",
+"gov": 1
 },
 {
 "c": "ch",
@@ -1310,7 +1974,11 @@ window.COUNTRIES = [
 "a": 1.0,
 "r": "1:1",
 "t": "p",
-"note": "Square and symmetrical, so it looks the same whichever way it hangs."
+"emoji": "🇨🇭",
+"note": "Square and symmetrical, so it looks the same whichever way it hangs.",
+"src": "https://www.aboutswitzerland.eda.admin.ch/en/swiss-flag",
+"srcLabel": "Federal Department of Foreign Affairs: The Swiss flag",
+"gov": 1
 },
 {
 "c": "sy",
@@ -1318,14 +1986,23 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "red"
+"top": "green",
+"emoji": "🇸🇾",
+"note": "The picture shows the green, white and black flag with three red stars that the 2025 Constitutional Declaration made the national flag. The earlier red, white and black flag with two green stars is no longer official.",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Syria",
+"srcLabel": "Wikipedia: Flag of Syria",
+"gov": 0
 },
 {
 "c": "st",
 "n": "São Tomé and Príncipe",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇸🇹",
+"src": "https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe",
+"srcLabel": "Wikipedia: Flag of São Tomé and Príncipe",
+"gov": 0
 },
 {
 "c": "tw",
@@ -1333,7 +2010,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"canton": "the blue canton with the white sun"
+"emoji": "🇹🇼",
+"canton": "the blue canton with the white sun",
+"src": "https://english.president.gov.tw/page/96",
+"srcLabel": "Office of the President: National flag and anthem",
+"gov": 1
 },
 {
 "c": "tj",
@@ -1342,28 +2023,44 @@ window.COUNTRIES = [
 "r": "1:2",
 "t": "e",
 "em": "a crown and stars",
-"top": "red"
+"top": "red",
+"emoji": "🇹🇯",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Tajikistan",
+"srcLabel": "Wikipedia: Flag of Tajikistan",
+"gov": 0
 },
 {
 "c": "tz",
 "n": "Tanzania",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇹🇿",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Tanzania",
+"srcLabel": "Wikipedia: Flag of Tanzania",
+"gov": 0
 },
 {
 "c": "th",
 "n": "Thailand",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇹🇭",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Thailand",
+"srcLabel": "Wikipedia: Flag of Thailand",
+"gov": 0
 },
 {
 "c": "bs",
 "n": "The Bahamas",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇧🇸",
+"src": "https://en.wikipedia.org/wiki/Flag_of_the_Bahamas",
+"srcLabel": "Wikipedia: Flag of the Bahamas",
+"gov": 0
 },
 {
 "c": "gm",
@@ -1371,14 +2068,22 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇬🇲",
+"src": "https://en.wikipedia.org/wiki/Flag_of_the_Gambia",
+"srcLabel": "Wikipedia: Flag of the Gambia",
+"gov": 0
 },
 {
 "c": "tl",
 "n": "Timor-Leste",
 "a": 2.0,
 "r": "1:2",
-"t": "p"
+"t": "p",
+"emoji": "🇹🇱",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Timor-Leste",
+"srcLabel": "Wikipedia: Flag of Timor-Leste",
+"gov": 0
 },
 {
 "c": "tg",
@@ -1386,7 +2091,11 @@ window.COUNTRIES = [
 "a": 1.618,
 "r": "1:1.618 (golden ratio)",
 "t": "p",
-"canton": "the red canton with the white star"
+"emoji": "🇹🇬",
+"canton": "the red canton with the white star",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Togo",
+"srcLabel": "Wikipedia: Flag of Togo",
+"gov": 0
 },
 {
 "c": "to",
@@ -1394,21 +2103,33 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"canton": "the white canton with the red cross"
+"emoji": "🇹🇴",
+"canton": "the white canton with the red cross",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Tonga",
+"srcLabel": "Wikipedia: Flag of Tonga",
+"gov": 0
 },
 {
 "c": "tt",
 "n": "Trinidad and Tobago",
 "a": 1.6667,
 "r": "3:5",
-"t": "p"
+"t": "p",
+"emoji": "🇹🇹",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Trinidad_and_Tobago",
+"srcLabel": "Wikipedia: Flag of Trinidad and Tobago",
+"gov": 0
 },
 {
 "c": "tn",
 "n": "Tunisia",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇹🇳",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Tunisia",
+"srcLabel": "Wikipedia: Flag of Tunisia",
+"gov": 0
 },
 {
 "c": "tm",
@@ -1416,7 +2137,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "carpet patterns and a crescent"
+"em": "carpet patterns and a crescent",
+"emoji": "🇹🇲",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Turkmenistan",
+"srcLabel": "Wikipedia: Flag of Turkmenistan",
+"gov": 0
 },
 {
 "c": "tv",
@@ -1424,14 +2149,22 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"canton": "the Union Flag"
+"emoji": "🇹🇻",
+"canton": "the Union Flag",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Tuvalu",
+"srcLabel": "Wikipedia: Flag of Tuvalu",
+"gov": 0
 },
 {
 "c": "tr",
 "n": "Türkiye",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇹🇷",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Turkey",
+"srcLabel": "Wikipedia: Flag of Turkey",
+"gov": 0
 },
 {
 "c": "ug",
@@ -1440,7 +2173,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "a grey crowned crane",
-"top": "black"
+"top": "black",
+"emoji": "🇺🇬",
+"src": "https://london.mofa.go.ug/node/12",
+"srcLabel": "Uganda High Commission, London (Ministry of Foreign Affairs): National symbols",
+"gov": 1
 },
 {
 "c": "ua",
@@ -1448,7 +2185,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "blue"
+"top": "blue",
+"emoji": "🇺🇦",
+"src": "https://www.president.gov.ua/en/news/volodimir-zelenskij-sino-zhovtij-styag-ye-nezminnim-simvolom-62913",
+"srcLabel": "President of Ukraine: The blue-and-yellow flag is an unchanging symbol",
+"gov": 1
 },
 {
 "c": "ae",
@@ -1457,7 +2198,11 @@ window.COUNTRIES = [
 "r": "1:2",
 "t": "p",
 "top": "green",
-"hoist": "red"
+"hoist": "red",
+"emoji": "🇦🇪",
+"src": "https://en.wikipedia.org/wiki/Flag_of_the_United_Arab_Emirates",
+"srcLabel": "Wikipedia: Flag of the United Arab Emirates",
+"gov": 0
 },
 {
 "c": "gb",
@@ -1465,7 +2210,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "uk",
-"note": "The Flag Institute says the broad white diagonal goes uppermost in the top-left corner whether the flag hangs horizontally or vertically. Turning it over as well would put it upside down."
+"emoji": "🇬🇧",
+"note": "The Flag Institute says the broad white diagonal goes uppermost in the top-left corner whether the flag hangs horizontally or vertically. Turning it over as well would put it upside down.",
+"src": "https://www.gov.uk/guidance/designated-days-for-union-flag-flying",
+"srcLabel": "GOV.UK (DCMS): Union Flag flying guidance",
+"gov": 1
 },
 {
 "c": "us",
@@ -1473,8 +2222,12 @@ window.COUNTRIES = [
 "a": 1.9,
 "r": "10:19",
 "t": "p",
+"emoji": "🇺🇸",
 "canton": "the blue union with the stars",
-"note": "The US Flag Code says that against a wall, horizontal or vertical, the union goes uppermost and to the flag's own right, which is the observer's left. In a window it is placed the same way as seen from the street. Over the middle of a street, hang it vertically with the union to the north on an east–west street and to the east on a north–south street."
+"note": "The US Flag Code says that against a wall, horizontal or vertical, the union goes uppermost and to the flag's own right, which is the observer's left. In a window it is placed the same way as seen from the street. Over the middle of a street, hang it vertically with the union to the north on an east–west street and to the east on a north–south street.",
+"src": "https://www.govinfo.gov/content/pkg/USCODE-2011-title4/html/USCODE-2011-title4-chap1-sec7.htm",
+"srcLabel": "GovInfo (US Government Publishing Office): US Flag Code, 4 U.S.C. § 7",
+"gov": 1
 },
 {
 "c": "uy",
@@ -1483,7 +2236,11 @@ window.COUNTRIES = [
 "r": "2:3",
 "t": "e",
 "em": "the Sun of May (a sun with a face)",
-"canton": "the Sun of May"
+"emoji": "🇺🇾",
+"canton": "the Sun of May",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Uruguay",
+"srcLabel": "Wikipedia: Flag of Uruguay",
+"gov": 0
 },
 {
 "c": "uz",
@@ -1491,7 +2248,11 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "p",
-"top": "blue"
+"top": "blue",
+"emoji": "🇺🇿",
+"src": "https://president.uz/en/pages/view/symbols",
+"srcLabel": "President of Uzbekistan: State symbols",
+"gov": 1
 },
 {
 "c": "vu",
@@ -1499,7 +2260,11 @@ window.COUNTRIES = [
 "a": 1.6667,
 "r": "3:5",
 "t": "e",
-"em": "a boar's tusk and fern leaves"
+"em": "a boar's tusk and fern leaves",
+"emoji": "🇻🇺",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Vanuatu",
+"srcLabel": "Wikipedia: Flag of Vanuatu",
+"gov": 0
 },
 {
 "c": "va",
@@ -1508,7 +2273,11 @@ window.COUNTRIES = [
 "r": "1:1",
 "t": "e",
 "em": "crossed keys and a papal tiara",
-"hoist": "yellow"
+"hoist": "yellow",
+"emoji": "🇻🇦",
+"src": "https://www.vatican.va/roman_curia/secretariat_state/documents/insigne/sp_ss_scv_stemma-bandiera-sigillo_en.html",
+"srcLabel": "The Holy See: Coat of arms, flag and seal of Vatican City State",
+"gov": 1
 },
 {
 "c": "ve",
@@ -1516,14 +2285,22 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "yellow"
+"top": "yellow",
+"emoji": "🇻🇪",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Venezuela",
+"srcLabel": "Wikipedia: Flag of Venezuela",
+"gov": 0
 },
 {
 "c": "vn",
 "n": "Vietnam",
 "a": 1.5,
 "r": "2:3",
-"t": "p"
+"t": "p",
+"emoji": "🇻🇳",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Vietnam",
+"srcLabel": "Wikipedia: Flag of Vietnam",
+"gov": 0
 },
 {
 "c": "ye",
@@ -1531,7 +2308,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "p",
-"top": "red"
+"top": "red",
+"emoji": "🇾🇪",
+"src": "https://yemenembassy.my/v3/en/about-yemen/",
+"srcLabel": "Embassy of Yemen in Malaysia: About Yemen",
+"gov": 1
 },
 {
 "c": "zm",
@@ -1539,7 +2320,11 @@ window.COUNTRIES = [
 "a": 1.5,
 "r": "2:3",
 "t": "e",
-"em": "an eagle"
+"em": "an eagle",
+"emoji": "🇿🇲",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Zambia",
+"srcLabel": "Wikipedia: Flag of Zambia",
+"gov": 0
 },
 {
 "c": "zw",
@@ -1547,6 +2332,10 @@ window.COUNTRIES = [
 "a": 2.0,
 "r": "1:2",
 "t": "e",
-"em": "the Zimbabwe Bird"
+"em": "the Zimbabwe Bird",
+"emoji": "🇿🇼",
+"src": "https://en.wikipedia.org/wiki/Flag_of_Zimbabwe",
+"srcLabel": "Wikipedia: Flag of Zimbabwe",
+"gov": 0
 }
 ];

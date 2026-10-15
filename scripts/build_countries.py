@@ -4,7 +4,7 @@ Usage: python3 -I scripts/build_countries.py <path-to-hampusborgos/country-flags
 
 Flag images: https://github.com/hampusborgos/country-flags (public domain, from Wikimedia Commons).
 Aspect ratios are read from each SVG's viewBox; the ratio labels below are the official
-proportions (hoist : fly).
+proportions (hoist : fly). Official government links come from data/official_links.tsv.
 """
 import json, os, re, shutil, sys
 
@@ -67,7 +67,7 @@ TOP = {
     "KE": "black", "KW": "green", "LS": "blue", "LT": "yellow", "LU": "red", "LY": "red", "MC": "red",
     "MU": "red", "MW": "black", "NE": "orange", "NL": "red", "PH": "blue", "PL": "white", "PS": "black",
     "RS": "red", "RU": "white", "SD": "red", "SI": "white", "SK": "white", "SL": "green", "SS": "black",
-    "SY": "red", "TJ": "red", "UA": "blue", "UG": "black", "UZ": "blue", "VE": "yellow", "YE": "red",
+    "SY": "green", "TJ": "red", "UA": "blue", "UG": "black", "UZ": "blue", "VE": "yellow", "YE": "red",
     "AE": "green", "BJ": "yellow", "MG": "red",
 }
 HOIST = {
@@ -106,9 +106,29 @@ NOTES = {
     "RS": "The picture shows the state flag with the coat of arms. The plain national flag without it follows the general rule.",
     "NP": "Nepal's flag is two stacked pennants and the only non-rectangular national flag. The hoist is the straight left edge. There is no standard vertical form, so display it in its own shape.",
     "KR": "The arrangement of the trigrams and of the red and blue halves of the taegeuk changes if the flag is turned the wrong way, so check it carefully against the picture.",
+    "SY": "The picture shows the green, white and black flag with three red stars that the 2025 Constitutional Declaration made the national flag. The earlier red, white and black flag with two green stars is no longer official.",
     "CH": "Square and symmetrical, so it looks the same whichever way it hangs.",
     "BR": "Brazil is sometimes listed among countries with a special design for vertical hanging, but that is not confirmed in official sources here.",
 }
+
+# Fallback source where no government page was found: the English Wikipedia article.
+WIKI = {
+    "BS": "Flag_of_the_Bahamas", "CF": "Flag_of_the_Central_African_Republic", "CN": "Flag_of_China",
+    "KM": "Flag_of_the_Comoros", "CG": "Flag_of_the_Republic_of_the_Congo", "CI": "Flag_of_Ivory_Coast",
+    "GM": "Flag_of_the_Gambia", "GE": "Flag_of_Georgia_(country)", "MH": "Flag_of_the_Marshall_Islands",
+    "FM": "Flag_of_the_Federated_States_of_Micronesia", "SB": "Flag_of_Solomon_Islands",
+    "ST": "Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe", "TL": "Flag_of_Timor-Leste", "TR": "Flag_of_Turkey",
+    "AE": "Flag_of_the_United_Arab_Emirates", "BN": "Flag_of_Brunei", "SZ": "Flag_of_Eswatini",
+}
+
+def load_links():
+    links = {}
+    with open(os.path.join(ROOT, "data", "official_links.tsv"), encoding="utf-8") as fh:
+        next(fh)
+        for line in fh:
+            code, url, label = line.rstrip("\n").split("\t")
+            links[code.upper()] = (url, label)
+    return links
 
 def aspect(code):
     s = open(os.path.join(SRC, "svg", code.lower() + ".svg"), encoding="utf-8").read()
@@ -129,6 +149,7 @@ def ratio_label(a):
     return f"{f.numerator}:{f.denominator}"
 
 names = json.load(open(os.path.join(SRC, "countries.json"), encoding="utf-8"))
+links = load_links()
 out = []
 os.makedirs(os.path.join(ROOT, "flags"), exist_ok=True)
 for c in CODES:
@@ -138,8 +159,16 @@ for c in CODES:
     if c in EMBLEM: row["em"] = EMBLEM[c]
     if c in TOP: row["top"] = TOP[c]
     if c in HOIST: row["hoist"] = HOIST[c]
+    # Unicode flag emoji: the two regional indicator symbols for the ISO code. All 197 countries
+    # here have one in the Unicode RGI emoji list (Kosovo uses XK).
+    row["emoji"] = "".join(chr(0x1F1E6 + ord(ch) - ord("A")) for ch in c)
     if c in CANTON: row["canton"] = CANTON[c]
     if c in NOTES: row["note"] = NOTES[c]
+    if c in links:
+        row["src"], row["srcLabel"], row["gov"] = links[c][0], links[c][1], 1
+    else:
+        title = WIKI.get(c, "Flag_of_" + row["n"].replace(" ", "_"))
+        row["src"], row["srcLabel"], row["gov"] = "https://en.wikipedia.org/wiki/" + title, "Wikipedia: " + title.replace("_", " ").replace("%C3%A3", "ã").replace("%C3%A9", "é").replace("%C3%AD", "í"), 0
     out.append(row)
     shutil.copyfile(os.path.join(SRC, "svg", c.lower() + ".svg"), os.path.join(ROOT, "flags", c.lower() + ".svg"))
 
